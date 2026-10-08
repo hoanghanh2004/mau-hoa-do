@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuộc Thi Tiếng Hát Màu Hoa Đỏ 2026 | Âm Vang Truyền Thống – Khát Vọng Tương Lai</title>
+  <meta name="description" content="Cổng thông tin và đăng ký chính thức Cuộc Thi Tiếng Hát Màu Hoa Đỏ 2026 (Mùa I). Đơn vị tổ chức Bến Thành Media, đồng hành bảo trợ SCTV Truyền Hình Cáp. Miễn phí đăng ký dự thi." />
+  
+  <!-- Open Graph / Meta Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cuộc Thi Tiếng Hát Màu Hoa Đỏ 2026" />
+  <meta property="og:description" content="Âm Vang Truyền Thống – Khát Vọng Tương Lai | Tổng giải thưởng Quán quân 100.000.000đ mỗi bảng. Đăng ký tham gia ngay!" />
+  <meta property="og:image" content="images/banner-hero.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              redDarker: '#130202',
+              redDark: '#2b0303',
+              redPrimary: '#7e0a0a',
+              redVibrant: '#b71212',
+              redAccent: '#e02424',
+              goldLight: '#fff2b2',
+              goldPrimary: '#f5c518',
+              goldMed: '#d4af37',
+              goldDark: '#946c10',
+              parchment: '#fdfaf2'
+            }
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            script: ['Alex Brush', 'cursive']
+          },
+          boxShadow: {
+            'gold-glow': '0 0 35px rgba(245, 197, 24, 0.4)',
+            'gold-glow-sm': '0 0 15px rgba(245, 197, 24, 0.3)',
+            'red-glow': '0 0 40px rgba(183, 18, 18, 0.45)',
+            'card-luxury': '0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(245, 197, 24, 0.3)'
+          },
+          animation: {
+            'float-slow': 'floatSlow 6s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2.5s ease-in-out infinite',
+            'shimmer': 'shimmer 3s linear infinite'
+          },
+          keyframes: {
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.05)' }
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Gold Gradient Utilities */
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #fffbe6 0%, #fbd561 35%, #e0aa2b 70%, #9a6f15 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gold-metallic {
+      background: linear-gradient(to right, #e2b755, #fff5d1, #dfa938, #fef1bc, #b8860b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: shimmer 5s linear infinite;
+    }
+
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #fce58a 0%, #eab839 50%, #b8860b 100%);
+    }
+
+    .bg-radial-luxury {
+      background: radial-gradient(circle at 50% 15%, #5a0404 0%, #2a0202 45%, #100101 100%);
+    }
+
+    .bg-radial-hero {
+      background: radial-gradient(ellipse at center top, #750606 0%, #350202 50%, #120101 100%);
+    }
+
+    /* Glassmorphism */
+    .glass-card {
+      background: rgba(43, 3, 3, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(245, 197, 24, 0.35);
+    }
+
+    .glass-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245, 197, 24, 0.7);
+      box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 197, 24, 0.25);
+    }
+
+    /* Parchment Card Styles for Official Rules */
+    .card-parchment {
+      background: linear-gradient(180deg, #fffdf8 0%, #faf4e6 100%);
+      border: 2px solid #deb352;
+      border-radius: 16px;
+      position: relative;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .badge-number {
+      position: absolute;
+      top: -18px;
+      left: 24px;
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #8f0d0d 0%, #520505 100%);
+      border: 2px solid #fbd561;
+      border-radius: 10px;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      z-index: 20;
+    }
+
+    .badge-number span {
+      transform: rotate(-45deg);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    /* Gold Border Effects */
+    .gold-frame {
+      border: 2px solid transparent;
+      background: linear-gradient(#240202, #240202) padding-box,
+                  linear-gradient(135deg, #ffd700, #b8860b, #fff2a3, #946c10) border-box;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #140202;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #946c10;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f5c518;
+    }
+
+    /* Lightbox Modal Transition */
+    #lightboxModal {
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #lightboxModal.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Star Particle Canvas */
+    #heroCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-redDarker text-stone-100 font-sans antialiased selection:bg-brand-goldPrimary selection:text-brand-redDarker overflow-x-hidden">
+
+  <!-- ========================================================================= -->
+  <!-- 0. TOP NOTIFICATION BAR & QUICK INFO                                      -->
+  <!-- ========================================================================= -->
+  <div class="bg-gradient-to-r from-[#210202] via-[#4d0505] to-[#210202] border-b border-amber-500/30 text-xs py-2 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 text-amber-200">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-red-500 animate-ping mr-1"></span>
+        <span class="font-bold text-amber-300 uppercase tracking-wider">Thông báo chính thức:</span>
+        <span class="hidden sm:inline">Khởi động Vòng Tuyển chọn Toàn quốc 2026 –</span>
+        <span class="text-amber-400 font-semibold underline">100% Miễn phí dự thi!</span>
+      </div>
+      <div class="flex items-center space-x-6 text-stone-300">
+        <a href="tel:0938808886" class="flex items-center gap-1.5 hover:text-amber-300 transition-colors font-medium">
+          <i class="fa-solid fa-phone-volume text-amber-400 text-xs"></i>
+          <span>Hotline: <strong class="text-amber-300">0938 808 886</strong></span>
+        </a>
+        <a href="mailto:ceoduymanh@gmail.com" class="hidden md:flex items-center gap-1.5 hover:text-amber-300 transition-colors font-medium">
+          <i class="fa-solid fa-envelope text-amber-400 text-xs"></i>
+          <span>ceoduymanh@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. STICKY NAVIGATION BAR                                                  -->
+  <!-- ========================================================================= -->
+  <header id="mainNavbar" class="sticky top-0 z-40 bg-[#1a0202]/95 backdrop-blur-md border-b border-amber-500/40 shadow-xl transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Left: Brand / Contest Logo with Emblem (Never shrink, perfectly balanced) -->
+        <a href="#" class="flex items-center gap-3 group flex-shrink-0 select-none py-1">
+          <div class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-gold-glow flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full rounded-full overflow-hidden bg-[#faf6ed] flex items-center justify-center">
+              <img src="images/logo-cuoc-thi.png" alt="Logo Cuộc thi Tiếng Hát Màu Hoa Đỏ" class="w-8 h-8 object-contain" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center leading-none">
+            <span class="text-[9px] sm:text-[10px] uppercase tracking-wider text-amber-400 font-extrabold whitespace-nowrap block">
+              Cuộc Thi Toàn Quốc 2026
+            </span>
+            <div class="flex items-center gap-1.5 mt-1">
+              <span class="font-serif font-black text-lg sm:text-xl text-white uppercase tracking-tight whitespace-nowrap group-hover:text-amber-300 transition-colors">
+                MÀU HOA ĐỎ
+              </span>
+              <span class="text-[9px] font-black text-amber-300 bg-red-950 px-1.5 py-0.5 rounded border border-amber-400/50 leading-none whitespace-nowrap">
+                MÙA I
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Navigation Links (Airy, elegant, hover pill states) -->
+        <nav class="hidden xl:flex items-center gap-0 text-[11px] 2xl:text-xs font-bold text-stone-200">
+          <a href="#gioi-thieu" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Giới Thiệu</a>
+          <a href="#doi-tuong" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Bảng Thi</a>
+          <a href="#lo-trinh" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Lộ Trình</a>
+          <a href="#giai-thuong" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Giải Thưởng</a>
+          <a href="#khoanh-khac" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Sân Khấu</a>
+          <a href="#ho-so" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Hồ Sơ</a>
+          <a href="#don-vi" class="px-1.5 2xl:px-2 py-2 rounded-xl hover:text-amber-300 hover:bg-white/5 transition-all whitespace-nowrap">Đồng Hành</a>
+        </nav>
+
+        <!-- Right: Sponsor Badges, Glowing CTA & Mobile Toggle -->
+        <div class="flex items-center gap-2 xl:gap-3 flex-shrink-0 min-w-0">
+          
+          <!-- Mini Sponsor Logos Pill (Visible on xl+ screens with ample space) -->
+          <div class="hidden xl:flex items-center gap-2 pl-2.5 pr-2 py-1 rounded-full bg-black/40 border border-amber-400/30 backdrop-blur-sm shadow-inner">
+            <span class="text-[9px] uppercase font-bold text-amber-300/80 tracking-wider">Đồng hành:</span>
+            <div class="h-11 w-[4.5rem] px-1 bg-[#faf6ed] rounded flex flex-shrink-0 items-center justify-center border border-amber-300/60 shadow-sm overflow-hidden" title="Đơn vị tổ chức: BENTHANH (Cập Bến Để Thành Công)">
+              <img src="images/logo-benthanh.png" alt="Logo BENTHANH" class="block h-auto max-h-9 w-auto max-w-full object-contain" />
+            </div>
+            <div class="h-11 w-[4.5rem] px-1 bg-[#faf6ed] rounded flex flex-shrink-0 items-center justify-center border border-amber-300/60 shadow-sm overflow-hidden" title="Bảo trợ truyền thông: Truyền hình Cáp SCTV">
+              <img src="images/logo-sctv.png" alt="Logo SCTV" class="block h-auto max-h-9 w-auto max-w-full object-contain" />
+            </div>
+          </div>
+
+          <!-- Main CTA Button -->
+          <a href="#dang-ky" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-brand-redDarker font-black px-4 xl:px-5 py-2.5 rounded-full shadow-gold-glow text-xs xl:text-sm tracking-wide transition-all transform hover:-translate-y-0.5 active:translate-y-0 uppercase whitespace-nowrap flex-shrink-0">
+            <i class="fa-solid fa-microphone-lines text-xs"></i>
+            <span>Đăng Ký Dự Thi</span>
+          </a>
+
+          <!-- Mobile Hamburger Menu Button (Visible on < lg screens) -->
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Mở menu" class="xl:hidden w-10 h-10 rounded-xl bg-red-950/90 border border-amber-400/50 text-amber-300 hover:text-white hover:bg-red-900 focus:outline-none transition-all flex items-center justify-center shadow-md flex-shrink-0">
+            <i id="hamburgerIcon" class="fa-solid fa-bars text-lg transition-transform duration-200"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div id="mobileBackdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 xl:hidden" onclick="closeMobileMenu()"></div>
+
+  <!-- Mobile Off-Canvas Drawer (Slides in from the right) -->
+  <div id="mobileDrawer" class="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-gradient-to-b from-[#220202] via-[#1a0202] to-[#120101] border-l-2 border-amber-500/40 z-50 transform translate-x-full transition-transform duration-300 ease-out xl:hidden flex flex-col justify-between shadow-2xl overflow-y-auto">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-amber-500/30 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-[#faf6ed] p-1 border border-amber-400 flex items-center justify-center flex-shrink-0">
+          <img src="images/logo-cuoc-thi.png" alt="Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-[9px] uppercase tracking-wider text-amber-400 font-bold leading-none">Cuộc Thi 2026</span>
+          <span class="font-serif font-black text-sm text-white uppercase leading-tight mt-0.5">MÀU HOA ĐỎ</span>
+        </div>
+      </div>
+      <!-- Close button -->
+      <button onclick="closeMobileMenu()" class="w-9 h-9 rounded-full bg-red-950/80 border border-amber-400/50 text-amber-300 hover:text-white flex items-center justify-center text-sm" aria-label="Đóng menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Nav Links -->
+    <div class="p-5 space-y-2 flex-1">
+      <a href="#gioi-thieu" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-flag text-amber-400 text-sm w-5 text-center"></i>
+        <span>Về Cuộc Thi &amp; Mục Đích</span>
+      </a>
+      <a href="#doi-tuong" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-users text-amber-400 text-sm w-5 text-center"></i>
+        <span>Đối Tượng &amp; 02 Bảng Thi</span>
+      </a>
+      <a href="#lo-trinh" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-regular fa-calendar-check text-amber-400 text-sm w-5 text-center"></i>
+        <span>Lộ Trình Tuyển Chọn 2026</span>
+      </a>
+      <a href="#giai-thuong" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-trophy text-amber-400 text-sm w-5 text-center"></i>
+        <span>Cơ Cấu Giải Thưởng (100 Tr.đ)</span>
+      </a>
+      <a href="#khoanh-khac" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-camera-retro text-amber-400 text-sm w-5 text-center"></i>
+        <span>Khoảnh Khắc Sân Khấu Thực Tế</span>
+      </a>
+      <a href="#ho-so" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-folder-open text-amber-400 text-sm w-5 text-center"></i>
+        <span>Hồ Sơ &amp; Quy Chế Dự Thi</span>
+      </a>
+      <a href="#don-vi" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-handshake text-amber-400 text-sm w-5 text-center"></i>
+        <span>Đơn Vị Tổ Chức &amp; Đồng Hành</span>
+      </a>
+      <a href="#faq" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
+        <i class="fa-solid fa-circle-question text-amber-400 text-sm w-5 text-center"></i>
+        <span>Câu Hỏi Thường Gặp (FAQ)</span>
+      </a>
+
+      <!-- Big Mobile CTA Button -->
+      <div class="pt-3">
+        <a href="#dang-ky" onclick="closeMobileMenu()" class="w-full py-3.5 rounded-xl bg-gold-gradient text-stone-950 font-black uppercase text-xs tracking-wider shadow-gold-glow flex items-center justify-center gap-2">
+          <i class="fa-solid fa-file-pen"></i>
+          <span>ĐĂNG KÝ DỰ THI TRỰC TUYẾN</span>
+        </a>
+      </div>
+
+      <!-- Sponsor Badges in Mobile Menu -->
+      <div class="mt-4 p-3 rounded-xl bg-black/50 border border-amber-500/20">
+        <span class="block text-[10px] uppercase font-bold text-amber-300/80 mb-2 text-center tracking-wider">Đơn vị tổ chức &amp; Bảo trợ</span>
+        <div class="flex items-center justify-center gap-3">
+          <div class="h-8 px-2 bg-[#faf6ed] rounded flex items-center justify-center border border-amber-300/60" title="BENTHANH">
+            <img src="images/logo-benthanh.png" alt="BENTHANH" class="h-5 w-auto object-contain" />
+          </div>
+          <div class="h-8 px-2 bg-[#faf6ed] rounded flex items-center justify-center border border-amber-300/60" title="SCTV">
+            <img src="images/logo-sctv.png" alt="SCTV" class="h-5 w-auto object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer: Quick Contacts -->
+    <div class="p-5 border-t border-amber-500/30 bg-black/40">
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <a href="tel:0938808886" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-red-900/80 text-white font-bold border border-red-700/50">
+          <i class="fa-solid fa-phone text-amber-400 text-[11px]"></i>
+          <span>0938 808 886</span>
+        </a>
+        <a href="https://zalo.me/0938808886" target="_blank" class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-blue-700 text-white font-bold border border-blue-600">
+          <i class="fa-solid fa-comment-dots text-[11px]"></i>
+          <span>Zalo Tư Vấn</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO SECTION - CINEMATIC & DYNAMIC                                     -->
+  <!-- ========================================================================= -->
+  <section class="relative bg-radial-hero overflow-hidden pt-8 pb-20 md:pt-14 md:pb-28 border-b-4 border-amber-500/80">
+    <!-- Star Canvas Animation -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Ambient Lighting Glows -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-b from-amber-400/20 via-red-600/10 to-transparent blur-[140px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-brand-redDarker to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Top Prestige Header Bar with Official Logos & Badge -->
+      <div class="max-w-5xl mx-auto mb-8 sm:mb-10 pb-6 border-b border-amber-400/25 flex flex-wrap items-center justify-center sm:justify-between gap-3 sm:gap-4">
+        <!-- Organizer Badge -->
+        <div class="flex items-center gap-3 bg-red-950/70 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-amber-400/40 shadow-lg">
+          <div class="bg-[#faf6ed] p-1.5 rounded-xl border border-amber-300/70 shadow-sm flex items-center justify-center">
+            <img src="images/logo-benthanh.png" alt="Đơn vị tổ chức BENTHANH" class="h-8 sm:h-9 w-auto object-contain" />
+          </div>
+          <div class="text-left">
+            <span class="text-[9px] sm:text-[10px] text-amber-300/80 uppercase tracking-widest block font-semibold">Đơn vị tổ chức</span>
+            <span class="text-xs font-black uppercase text-white tracking-wider">BENTHANH</span>
+            <span class="text-[9px] sm:text-[10px] text-amber-200 block italic">(Cập Bến Để Thành Công)</span>
+          </div>
+        </div>
+
+        <!-- Center Badge -->
+        <div class="flex items-center gap-2 bg-black/60 backdrop-blur-md px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full border border-amber-400/60 shadow-gold-glow text-center">
+          <i class="fa-solid fa-star text-amber-400 animate-spin text-xs sm:text-sm" style="animation-duration: 9s;"></i>
+          <span class="text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-wider text-gold-metallic">Dòng Nhạc Truyền Thống Cách Mạng Việt Nam</span>
+          <i class="fa-solid fa-star text-amber-400 animate-spin text-xs sm:text-sm" style="animation-duration: 9s;"></i>
+        </div>
+
+        <!-- Co-organizer / Broadcast Partner Badge -->
+        <div class="flex items-center gap-3 bg-red-950/70 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-amber-400/40 shadow-lg">
+          <div class="bg-[#faf6ed] p-1.5 rounded-xl border border-amber-300/70 shadow-sm flex items-center justify-center">
+            <img src="images/logo-sctv.png" alt="Đồng hành & Bảo trợ truyền thông SCTV" class="h-8 sm:h-9 w-auto object-contain" />
+          </div>
+          <div class="text-left">
+            <span class="text-[9px] sm:text-[10px] text-amber-300/80 uppercase tracking-widest block font-semibold">Đồng hành & Bảo trợ</span>
+            <span class="text-xs font-black uppercase text-white tracking-wider">SCTV Truyền Hình Cáp</span>
+            <span class="text-[9px] sm:text-[10px] text-amber-200 block">Trực tiếp Gala Vinh Danh</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Hero 2-Column Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- Left Column: Typography, Tagline, Story Hook, CTA -->
+        <div class="lg:col-span-7 text-center lg:text-left order-2 lg:order-1">
+          
+          <!-- Announcement Pill -->
+          <div class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2 rounded-full bg-red-900/60 border border-amber-400/60 shadow-lg mb-4 text-xs sm:text-sm font-bold text-amber-300">
+            <i class="fa-solid fa-award text-amber-400 text-sm"></i>
+            <span class="uppercase tracking-widest">MÙA I - 2026 | TOÀN QUỐC</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span class="text-amber-200 font-medium">Hà Nội &amp; TP. Hồ Chí Minh</span>
+          </div>
+
+          <!-- Main Title Hierarchy -->
+          <h2 class="text-lg sm:text-2xl md:text-3xl font-extrabold uppercase tracking-widest text-amber-100">
+            CUỘC THI TIẾNG HÁT
+          </h2>
+
+          <div class="relative my-2 sm:my-3">
+            <h1 class="font-script text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-amber-300 drop-shadow-[0_6px_25px_rgba(0,0,0,0.9)] leading-none -rotate-1 select-none">
+              Màu Hoa Đỏ
+            </h1>
+            <div class="flex items-center justify-center lg:justify-start gap-3 mt-1 sm:mt-2">
+              <span class="font-serif italic font-black text-3xl sm:text-5xl text-amber-400 drop-shadow-md">
+                2026
+              </span>
+              <span class="h-0.5 w-16 sm:w-24 bg-gradient-to-r from-amber-400 to-transparent hidden sm:inline-block"></span>
+            </div>
+          </div>
+
+          <!-- Slogan Ribbon Banner from Poster -->
+          <div class="my-5 inline-block w-full max-w-xl">
+            <div class="relative py-3.5 px-6 rounded-xl bg-gradient-to-r from-red-950 via-red-900 to-red-950 border-2 border-amber-400 shadow-gold-glow flex items-center justify-center space-x-3">
+              <i class="fa-solid fa-star text-amber-400 text-base flex-shrink-0 animate-pulse"></i>
+              <p class="font-black uppercase tracking-wider text-amber-100 text-xs sm:text-base text-center">
+                ÂM VANG TRUYỀN THỐNG – KHÁT VỌNG TƯƠNG LAI
+              </p>
+              <i class="fa-solid fa-star text-amber-400 text-base flex-shrink-0 animate-pulse"></i>
+            </div>
+          </div>
+
+          <!-- Description Hook -->
+          <p class="text-stone-300 text-sm sm:text-base max-w-2xl font-normal leading-relaxed mb-8">
+            Nơi tôn vinh những khúc tráng ca bất hủ, khơi dậy tinh thần yêu nước và chắp cánh cho những giọng ca tài năng trên khắp mọi miền Tổ quốc. Cơ hội tỏa sáng trên sân khấu chuyên nghiệp quy mô quốc gia và truyền hình trực tiếp trên kênh truyền hình <strong class="text-amber-300">SCTV</strong>!
+          </p>
+
+          <!-- Dual Call to Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-8">
+            <a href="#dang-ky" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold-gradient text-stone-950 font-black text-base hover:brightness-110 transition-all shadow-gold-glow flex items-center justify-center gap-3 transform hover:-translate-y-1">
+              <i class="fa-solid fa-file-pen text-lg"></i>
+              <span>ĐĂNG KÝ NGAY (MIỄN PHÍ 100%)</span>
+            </a>
+            <a href="#the-le" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-red-950/80 hover:bg-red-900 text-amber-300 border border-amber-400/60 font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2.5">
+              <i class="fa-solid fa-scroll text-base"></i>
+              <span>Xem Thể Lệ &amp; Hồ Sơ</span>
+            </a>
+          </div>
+
+          <!-- Free Registration Guarantee Badge -->
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-black/40 border border-amber-500/30 text-xs text-amber-200">
+            <i class="fa-solid fa-shield-halved text-amber-400 text-sm"></i>
+            <span><strong>Cam kết chính thức từ BTC:</strong> Thí sinh không phải đóng bất kỳ khoản phí nào khi tham gia.</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Featured Visual Showcase -->
+        <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center">
+          <div class="relative group max-w-sm sm:max-w-md w-full">
+            
+            <!-- Animated Ambient Aura -->
+            <div class="absolute -inset-2 bg-gradient-to-r from-amber-500 via-red-600 to-amber-500 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition duration-700 animate-pulse-glow"></div>
+            
+            <!-- Poster Card Container -->
+            <div class="relative rounded-2xl overflow-hidden border-4 border-amber-400 bg-[#160202] shadow-2xl">
+              
+              <!-- Official Banner Graphic (Microphone + Calligraphy + Singer) -->
+              <div class="relative overflow-hidden cursor-pointer" onclick="openLightbox('images/poster-the-le.jpg', 'Poster Thể Lệ & Cơ Cấu Giải Thưởng Chính Thức - Tiếng Hát Màu Hoa Đỏ 2026')">
+                <img src="images/banner-hero.png" alt="Nhận diện chính thức Cuộc Thi Tiếng Hát Màu Hoa Đỏ 2026" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#180202] via-transparent to-transparent"></div>
+                
+                <!-- Click to View Poster Overlay Button -->
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="px-4 py-2 rounded-full bg-amber-400 text-brand-redDarker font-black text-xs uppercase tracking-wider shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i> Xem Poster Gốc &amp; Thể Lệ
+                  </span>
+                </div>
+              </div>
+
+              <!-- Poster Detail Info Strip -->
+              <div class="p-4 sm:p-5 bg-gradient-to-b from-[#250303] to-[#160202] border-t border-amber-400/40">
+                <div class="flex items-center justify-between text-xs text-amber-200 mb-2">
+                  <span class="flex items-center gap-1.5 font-bold">
+                    <i class="fa-solid fa-trophy text-amber-400"></i> Quán Quân: <strong class="text-amber-300 text-sm">100.000.000đ</strong>
+                  </span>
+                  <span class="bg-amber-400 text-brand-redDarker px-2.5 py-0.5 rounded-full font-black text-[10px] uppercase">
+                    02 BẢNG THI
+                  </span>
+                </div>
+                <p class="text-[11px] text-stone-300 leading-snug">
+                  Áp dụng cho Bảng Chuyên Nghiệp &amp; Bảng Phong Trào tại 2 miền Bắc – Nam.
+                </p>
+                <div class="mt-3 pt-3 border-t border-amber-400/20 flex items-center justify-between text-[11px]">
+                  <span class="text-stone-400">Gala trao giải: <strong>22/12/2026</strong></span>
+                  <a href="#lo-trinh" class="text-amber-300 hover:text-white font-semibold flex items-center gap-1">
+                    Xem tiến trình <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating Badge: Gala Live Broadcast -->
+            <div class="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 bg-gradient-to-r from-red-950 to-red-900 border-2 border-amber-400 text-amber-300 px-4 py-2 rounded-xl shadow-card-luxury flex items-center gap-2.5 text-xs font-bold">
+              <i class="fa-solid fa-tower-broadcast text-red-500 animate-pulse text-base"></i>
+              <div>
+                <span class="block text-[10px] text-stone-300 font-normal">Truyền hình trực tiếp:</span>
+                <span class="uppercase tracking-wide">KÊNH TRUYỀN HÌNH SCTV</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Counters Grid -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-10 border-t border-amber-500/30">
+        
+        <div class="glass-card glass-card-hover p-4 sm:p-5 rounded-2xl text-center">
+          <div class="text-amber-300 text-2xl sm:text-4xl font-serif font-black mb-1 drop-shadow">
+            100 <span class="text-base sm:text-xl font-sans">Tr.đ</span>
+          </div>
+          <div class="text-[11px] sm:text-xs uppercase text-amber-200/90 font-bold tracking-wider">
+            Giải Quán Quân Mỗi Bảng
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-4 sm:p-5 rounded-2xl text-center">
+          <div class="text-amber-300 text-2xl sm:text-4xl font-serif font-black mb-1 drop-shadow">
+            02 <span class="text-base sm:text-xl font-sans">Bảng Thi</span>
+          </div>
+          <div class="text-[11px] sm:text-xs uppercase text-amber-200/90 font-bold tracking-wider">
+            Chuyên Nghiệp &amp; Phong Trào
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-4 sm:p-5 rounded-2xl text-center">
+          <div class="text-amber-300 text-2xl sm:text-4xl font-serif font-black mb-1 drop-shadow">
+            02 <span class="text-base sm:text-xl font-sans">Khu Vực</span>
+          </div>
+          <div class="text-[11px] sm:text-xs uppercase text-amber-200/90 font-bold tracking-wider">
+            Hà Nội &amp; TP. Hồ Chí Minh
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-4 sm:p-5 rounded-2xl text-center">
+          <div class="text-amber-300 text-2xl sm:text-4xl font-serif font-black mb-1 drop-shadow">
+            100%
+          </div>
+          <div class="text-[11px] sm:text-xs uppercase text-amber-200/90 font-bold tracking-wider">
+            Miễn Phí Đăng Ký Dự Thi
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. COUNTDOWN TO GALA NIGHT & REVOLUTIONARY MUSIC PLAYER CALLOUT            -->
+  <!-- ========================================================================= -->
+  <section class="py-10 bg-[#160202] border-b border-amber-500/30 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-[#2e0303] via-[#480606] to-[#2e0303] rounded-3xl border-2 border-amber-400/60 p-6 sm:p-8 shadow-card-luxury">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left: Gala Night Countdown -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
+              <i class="fa-regular fa-clock"></i> Đếm ngược sự kiện trọng đại
+            </div>
+            <h3 class="text-xl sm:text-2xl font-serif font-black text-white">
+              ĐÊM GALA VINH DANH &amp; TRAO GIẢI TOÀN QUỐC
+            </h3>
+            <p class="text-stone-300 text-xs sm:text-sm mt-1">
+              Ngày <strong>22/12/2026</strong> – Kỷ niệm Ngày thành lập Quân đội Nhân dân Việt Nam. Truyền hình trực tiếp trên kênh SCTV.
+            </p>
+            
+            <!-- Real Countdown Blocks -->
+            <div class="grid grid-cols-4 gap-2 sm:gap-4 mt-5 max-w-md mx-auto lg:mx-0">
+              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
+                <span id="daysCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">256</span>
+                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Ngày</span>
+              </div>
+              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
+                <span id="hoursCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">14</span>
+                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Giờ</span>
+              </div>
+              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
+                <span id="minsCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">38</span>
+                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Phút</span>
+              </div>
+              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
+                <span id="secsCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">19</span>
+                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Giây</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Audio Melody Preview Component (Atmosphere Builder) -->
+          <div class="lg:col-span-5 bg-[#140101]/90 rounded-2xl border border-amber-400/40 p-4 sm:p-5">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-music text-amber-400"></i>
+                <span class="text-xs uppercase font-bold text-amber-200">Giai điệu truyền thống cách mạng</span>
+              </div>
+              <span class="text-[10px] bg-red-950 text-amber-300 px-2 py-0.5 rounded border border-amber-500/30">Âm hưởng thiêng liêng</span>
+            </div>
+
+            <!-- Mini Player Display -->
+            <div class="flex items-center gap-4 bg-stone-900/80 p-3 rounded-xl border border-stone-800">
+              <button id="audioToggleBtn" onclick="toggleAudioDemo()" class="w-12 h-12 rounded-full bg-gold-gradient text-stone-950 flex items-center justify-center flex-shrink-0 shadow-md hover:scale-105 transition-transform" aria-label="Phát nhạc thử">
+                <i id="audioIcon" class="fa-solid fa-play text-sm"></i>
+              </button>
+              <div class="flex-1 min-w-0">
+                <span id="songTitle" class="block text-sm font-bold text-amber-200 truncate">Ca khúc: "Màu Hoa Đỏ" (Nhạc sĩ Thuận Yến)</span>
+                <span class="text-[11px] text-stone-400 block">Lời thơ: Nguyễn Đức Mậu</span>
+                <!-- Equalizer visualizer effect -->
+                <div class="flex items-center gap-1 mt-1.5 h-3">
+                  <span class="w-1 bg-amber-400 rounded-full h-2 animate-pulse"></span>
+                  <span class="w-1 bg-amber-300 rounded-full h-3 animate-pulse" style="animation-delay: 0.2s"></span>
+                  <span class="w-1 bg-amber-500 rounded-full h-1 animate-pulse" style="animation-delay: 0.4s"></span>
+                  <span class="w-1 bg-amber-400 rounded-full h-3 animate-pulse" style="animation-delay: 0.1s"></span>
+                  <span class="w-1 bg-amber-300 rounded-full h-2 animate-pulse" style="animation-delay: 0.3s"></span>
+                  <span class="w-1 bg-amber-500 rounded-full h-3 animate-pulse" style="animation-delay: 0.5s"></span>
+                  <span class="text-[10px] text-stone-500 ml-2">Âm vang hào hùng Tổ quốc</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- List of suggested revolutionary songs -->
+            <div class="mt-3 text-[11px] text-stone-400">
+              <span class="font-semibold text-amber-300">Gợi ý ca khúc dự thi:</span>
+              <span>Giai điệu Tổ quốc, Đất nước trọn niềm vui, Hát về cây lúa hôm nay, Tiếng đàn bầu, Tự nguyện...</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. SECTION: GIỚI THIỆU & MỤC ĐÍCH Ý NGHĨA CUỘC THI                        -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-radial-luxury relative border-b border-amber-500/30" id="gioi-thieu">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-landmark text-amber-400"></i> Tôn Vinh Di Sản Nghệ Thuật Dân Tộc
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-3">
+          Mục Đích &amp; Ý Nghĩa Thiêng Liêng
+        </h2>
+        <div class="w-28 h-1 bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Cuộc thi Tiếng Hát Màu Hoa Đỏ 2026 được khởi xướng với sứ mệnh gắn kết các thế hệ người Việt qua những giai điệu thiêng liêng, hun đúc lòng yêu nước và khẳng định khát vọng vươn mình của dân tộc.
+        </p>
+      </div>
+
+      <!-- 4 Core Objectives Grid (From Official Poster Box 1) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Objective 1 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl flex flex-col justify-between border-amber-400/40">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-800 to-red-600 border border-amber-400/60 flex items-center justify-center text-amber-300 text-2xl shadow-lg mb-5">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <h3 class="text-lg font-serif font-bold text-amber-300 mb-2.5">
+              Tìm Kiếm Giọng Hát Hay
+            </h3>
+            <p class="text-stone-300 text-sm leading-relaxed">
+              Phát hiện và tôn vinh những giọng ca tài năng, giàu cảm xúc trong thể hiện các bài ca truyền thống cách mạng trên khắp cả nước.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-400/20 text-xs text-amber-200/80 font-medium flex items-center gap-2">
+            <i class="fa-solid fa-check text-amber-400"></i> Tuyển chọn toàn diện
+          </div>
+        </div>
+
+        <!-- Objective 2 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl flex flex-col justify-between border-amber-400/40">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-800 to-red-600 border border-amber-400/60 flex items-center justify-center text-amber-300 text-2xl shadow-lg mb-5">
+              <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <h3 class="text-lg font-serif font-bold text-amber-300 mb-2.5">
+              Tôn Vinh Tác Phẩm Bất Hủ
+            </h3>
+            <p class="text-stone-300 text-sm leading-relaxed">
+              Tri ân những nhạc sĩ, tác phẩm đi cùng năm tháng, khắc họa sâu sắc khí phách hào hùng trong lịch sử dựng nước và giữ nước.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-400/20 text-xs text-amber-200/80 font-medium flex items-center gap-2">
+            <i class="fa-solid fa-check text-amber-400"></i> Di sản âm nhạc sống mãi
+          </div>
+        </div>
+
+        <!-- Objective 3 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl flex flex-col justify-between border-amber-400/40">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-800 to-red-600 border border-amber-400/60 flex items-center justify-center text-amber-300 text-2xl shadow-lg mb-5">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="text-lg font-serif font-bold text-amber-300 mb-2.5">
+              Giáo Dục Truyền Thống
+            </h3>
+            <p class="text-stone-300 text-sm leading-relaxed">
+              Giúp thế hệ trẻ thấu hiểu sâu sắc hơn về cội nguồn, lý tưởng cách mạng và niềm tự hào dân tộc cao quý qua những ca từ thiêng liêng.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-400/20 text-xs text-amber-200/80 font-medium flex items-center gap-2">
+            <i class="fa-solid fa-check text-amber-400"></i> Lan tỏa tinh thần yêu nước
+          </div>
+        </div>
+
+        <!-- Objective 4 -->
+        <div class="glass-card glass-card-hover p-7 rounded-2xl flex flex-col justify-between border-amber-400/40">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-red-800 to-red-600 border border-amber-400/60 flex items-center justify-center text-amber-300 text-2xl shadow-lg mb-5">
+              <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <h3 class="text-lg font-serif font-bold text-amber-300 mb-2.5">
+              Sân Chơi Nghệ Thuật Lành Mạnh
+            </h3>
+            <p class="text-stone-300 text-sm leading-relaxed">
+              Kiến tạo không gian giao lưu nghệ thuật văn minh, công bằng, quy mô bài bản cho tất cả những trái tim yêu âm nhạc khắp 3 miền.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-amber-400/20 text-xs text-amber-200/80 font-medium flex items-center gap-2">
+            <i class="fa-solid fa-check text-amber-400"></i> Bình đẳng &amp; Chuyên nghiệp
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. SECTION: ĐỐI TƯỢNG DỰ THI & 02 BẢNG THI ĐỘC LẬP                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-[#200202] relative border-b border-amber-500/30" id="doi-tuong">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs">Phân Chia Bảng Thi Khoa Học &amp; Công Bằng</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-2">
+          Đối Tượng &amp; 02 Bảng Thi Đấu
+        </h2>
+        <div class="w-28 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Cuộc thi mở rộng cho mọi công dân Việt Nam từ <strong>16 tuổi trở lên</strong>, có giọng hát tốt và đam mê âm nhạc cách mạng, không phân biệt vùng miền.
+        </p>
+      </div>
+
+      <!-- 2 Tables Comparison Cards (From Poster Box 2) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- BẢNG CHUYÊN NGHIỆP -->
+        <div class="card-parchment p-8 sm:p-10 shadow-2xl flex flex-col justify-between">
+          <div class="badge-number"><span>A</span></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-amber-300/80 mb-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-red-800">Phân định đối tượng 1</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-black text-brand-redDark uppercase flex items-center gap-2.5">
+                  <i class="fa-solid fa-graduation-cap text-red-700"></i>
+                  <span>Bảng Chuyên Nghiệp</span>
+                </h3>
+              </div>
+              <span class="bg-red-800 text-amber-200 text-xs font-bold px-3 py-1.5 rounded-full border border-amber-400">
+                Chuyên sâu
+              </span>
+            </div>
+
+            <div class="space-y-4 text-stone-800 text-sm sm:text-base font-medium">
+              <div class="p-4 rounded-xl bg-amber-100/70 border border-amber-300/80">
+                <h4 class="font-bold text-red-900 mb-1 flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-red-700"></i> Đối tượng tham gia:
+                </h4>
+                <p class="text-stone-700 text-sm leading-relaxed">
+                  Dành cho các <strong>ca sĩ, nghệ sĩ</strong> đang công tác, biểu diễn tại các đoàn nghệ thuật, nhà hát; các <strong>giảng viên, học viên, sinh viên</strong> tại các nhạc viện, học viện âm nhạc và trường cao đẳng/đại học nghệ thuật chuyên nghiệp trên toàn quốc.
+                </p>
+              </div>
+
+              <div class="space-y-2.5 pt-2">
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Yêu cầu chuyên môn:</strong> Kỹ thuật thanh nhạc chuẩn mực, tư duy xử lý tác phẩm tinh tế, phong cách sân khấu bản lĩnh.</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Ban Giám Khảo:</strong> Chấm điểm độc lập với hội đồng các Nghệ sĩ Nhân dân, Nghệ sĩ Ưu tú và Chuyên gia thanh nhạc hàng đầu.</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Cơ cấu giải thưởng:</strong> Hệ thống giải thưởng độc lập bao gồm 01 Quán quân 100 Tr.đ, 09 Á quân, 10 Khuyến khích.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-5 border-t border-amber-300 flex items-center justify-between">
+            <span class="text-xs text-stone-600 italic">* Khẳng định đẳng cấp nghệ sĩ sân khấu</span>
+            <a href="#dang-ky" onclick="selectTable('chuyen-nghiep')" class="text-xs font-bold text-red-800 hover:text-red-950 uppercase tracking-wider flex items-center gap-1.5 underline">
+              Đăng ký Bảng A <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- BẢNG PHONG TRÀO -->
+        <div class="card-parchment p-8 sm:p-10 shadow-2xl flex flex-col justify-between">
+          <div class="badge-number"><span>B</span></div>
+          
+          <div>
+            <div class="flex items-center justify-between pb-5 border-b border-amber-300/80 mb-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-red-800">Phân định đối tượng 2</span>
+                <h3 class="text-2xl sm:text-3xl font-serif font-black text-brand-redDark uppercase flex items-center gap-2.5">
+                  <i class="fa-solid fa-guitar text-red-700"></i>
+                  <span>Bảng Phong Trào</span>
+                </h3>
+              </div>
+              <span class="bg-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-full border border-amber-300">
+                Đại chúng
+              </span>
+            </div>
+
+            <div class="space-y-4 text-stone-800 text-sm sm:text-base font-medium">
+              <div class="p-4 rounded-xl bg-amber-100/70 border border-amber-300/80">
+                <h4 class="font-bold text-red-900 mb-1 flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-red-700"></i> Đối tượng tham gia:
+                </h4>
+                <p class="text-stone-700 text-sm leading-relaxed">
+                  Dành cho <strong>mọi tầng lớp nhân dân</strong>: học sinh, sinh viên các trường đại học/cao đẳng không chuyên, cán bộ, chiến sĩ, công nhân, viên chức, người lao động yêu ca hát và không qua đào tạo chuyên sâu về thanh nhạc.
+                </p>
+              </div>
+
+              <div class="space-y-2.5 pt-2">
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Tiêu chí chấm điểm:</strong> Giọng hát truyền cảm, mộc mạc, sự nhiệt huyết, tinh thần tự hào dân tộc và tình yêu sâu sắc với ca khúc.</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Cơ hội tỏa sáng:</strong> Thí sinh bảng phong trào được ban cố vấn hướng dẫn luyện thanh trước thềm vòng Chung kết toàn quốc.</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-stone-800">
+                  <i class="fa-solid fa-star text-amber-600 mt-1 flex-shrink-0 text-sm"></i>
+                  <span><strong>Cơ cấu giải thưởng:</strong> Nhận trọn vẹn hệ thống giải thưởng riêng biệt với 01 Quán quân 100 Tr.đ, 09 Á quân, 10 Khuyến khích.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-5 border-t border-amber-300 flex items-center justify-between">
+            <span class="text-xs text-stone-600 italic">* Tỏa sáng niềm đam mê ca hát của nhân dân</span>
+            <a href="#dang-ky" onclick="selectTable('phong-trao')" class="text-xs font-bold text-red-800 hover:text-red-950 uppercase tracking-wider flex items-center gap-1.5 underline">
+              Đăng ký Bảng B <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. SECTION: LỘ TRÌNH CUỘC THI & CƠ CẤU TUYỂN CHỌN                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-radial-hero relative border-b border-amber-500/30" id="lo-trinh">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs">Minh Bạch – Quy Mô – Chuyên Nghiệp</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-2">
+          Lộ Trình &amp; Cơ Cấu Tuyển Chọn 2026
+        </h2>
+        <div class="w-28 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Quy trình tuyển chọn bài bản, công phu trải dài qua 4 giai đoạn tại hai trung tâm văn hóa lớn nhất cả nước: <strong>Hà Nội</strong> &amp; <strong>TP. Hồ Chí Minh</strong>.
+        </p>
+      </div>
+
+      <!-- Roadmap Timeline Interactive Grid (From Poster Box 4 & 5) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Lộ trình 4 giai đoạn thời gian (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl sm:text-2xl font-serif font-bold text-amber-300 flex items-center gap-2">
+              <i class="fa-regular fa-calendar-check text-amber-400"></i>
+              <span>Lộ Trình Thời Gian Thi Đấu</span>
+            </h3>
+            <span class="text-xs text-stone-400">Mùa I - 2026</span>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="glass-card p-6 rounded-2xl border-amber-400/40 relative overflow-hidden group hover:border-amber-400 transition-all">
+            <div class="flex items-start gap-4 sm:gap-5">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-red-900 to-red-700 border-2 border-amber-400 flex items-center justify-center text-amber-300 font-black text-lg flex-shrink-0 shadow-md">
+                01
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-black uppercase text-amber-400 tracking-wider bg-red-950/80 px-2.5 py-0.5 rounded border border-amber-500/30">
+                    Tháng 10/2026
+                  </span>
+                  <span class="text-xs text-stone-400 flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot text-red-500"></i> Hà Nội &amp; TP.HCM
+                  </span>
+                </div>
+                <h4 class="text-lg font-bold text-white mt-1.5">Vòng Sơ Tuyển (Casting)</h4>
+                <p class="text-xs sm:text-sm text-stone-300 mt-1 leading-relaxed">
+                  Tổ chức casting tuyển chọn trực tiếp tại 02 miền Bắc – Nam. Thí sinh thể hiện ca khúc đã chuẩn bị trước Hội đồng thẩm định sơ khảo.
+                </p>
+                <div class="mt-3 text-xs text-amber-200/90 font-semibold bg-black/30 px-3 py-1.5 rounded-lg border border-amber-400/20 inline-block">
+                  🎯 Chỉ tiêu: Tuyển chọn <strong>100 thí sinh / bảng / miền</strong> vào Vòng Chung khảo.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="glass-card p-6 rounded-2xl border-amber-400/40 relative overflow-hidden group hover:border-amber-400 transition-all">
+            <div class="flex items-start gap-4 sm:gap-5">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-red-900 to-red-700 border-2 border-amber-400 flex items-center justify-center text-amber-300 font-black text-lg flex-shrink-0 shadow-md">
+                02
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-black uppercase text-amber-400 tracking-wider bg-red-950/80 px-2.5 py-0.5 rounded border border-amber-500/30">
+                    Tháng 11/2026
+                  </span>
+                  <span class="text-xs text-stone-400 flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot text-red-500"></i> Hà Nội &amp; TP.HCM
+                  </span>
+                </div>
+                <h4 class="text-lg font-bold text-white mt-1.5">Vòng Chung Khảo &amp; Bán Kết Khu Vực</h4>
+                <p class="text-xs sm:text-sm text-stone-300 mt-1 leading-relaxed">
+                  Thi đấu đối kháng sân khấu chuyên nghiệp tại hai miền. Đánh giá toàn diện về chất giọng, nhịp phách, phong cách biểu diễn và nhạc cảm.
+                </p>
+                <div class="mt-3 text-xs text-amber-200/90 font-semibold bg-black/30 px-3 py-1.5 rounded-lg border border-amber-400/20 inline-block">
+                  🎯 Lọc từ 50 xuống <strong>25 thí sinh / bảng / miền</strong> thi Bán kết.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="glass-card p-6 rounded-2xl border-amber-400/40 relative overflow-hidden group hover:border-amber-400 transition-all">
+            <div class="flex items-start gap-4 sm:gap-5">
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-red-900 to-red-700 border-2 border-amber-400 flex items-center justify-center text-amber-300 font-black text-lg flex-shrink-0 shadow-md">
+                03
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-black uppercase text-amber-400 tracking-wider bg-red-950/80 px-2.5 py-0.5 rounded border border-amber-500/30">
+                    Tháng 12/2026
+                  </span>
+                  <span class="text-xs text-stone-400 flex items-center gap-1">
+                    <i class="fa-solid fa-star text-amber-400"></i> Sân khấu tầm cỡ
+                  </span>
+                </div>
+                <h4 class="text-lg font-bold text-white mt-1.5">Chung Kết Toàn Quốc (02 Đêm Riêng Biệt)</h4>
+                <p class="text-xs sm:text-sm text-stone-300 mt-1 leading-relaxed">
+                  Tổ chức <strong>02 đêm Chung kết toàn quốc độc lập</strong> cho từng bảng thi với dàn nhạc sống, ánh sáng sân khấu và hội đồng ban giám khảo chuyên môn cao cấp.
+                </p>
+                <div class="mt-3 text-xs text-amber-200/90 font-semibold bg-black/30 px-3 py-1.5 rounded-lg border border-amber-400/20 inline-block">
+                  🎯 Quy tụ <strong>TOP 10 thí sinh xuất sắc nhất / bảng / miền</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Gala -->
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-[#440505] via-[#650808] to-[#440505] border-2 border-amber-400 shadow-gold-glow relative overflow-hidden">
+            <div class="flex items-start gap-4 sm:gap-5">
+              <div class="w-12 h-12 rounded-xl bg-gold-gradient text-stone-950 border-2 border-white flex items-center justify-center font-black text-xl flex-shrink-0 shadow-lg">
+                ★
+              </div>
+              <div class="flex-1">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <span class="text-xs font-black uppercase text-stone-950 tracking-wider bg-amber-300 px-3 py-0.5 rounded-full">
+                    22/12/2026 - TRỌNG ĐẠI
+                  </span>
+                  <span class="text-xs text-amber-200 font-bold flex items-center gap-1">
+                    <i class="fa-solid fa-tower-broadcast text-red-400 animate-pulse"></i> Truyền Hình Trực Tiếp SCTV
+                  </span>
+                </div>
+                <h4 class="text-xl font-serif font-black text-amber-200 mt-2">
+                  ĐÊM GALA VINH DANH &amp; TRAO GIẢI
+                </h4>
+                <p class="text-xs sm:text-sm text-stone-200 mt-1 leading-relaxed">
+                  Chương trình nghệ thuật đặc biệt chào mừng <strong>Ngày thành lập Quân đội Nhân dân Việt Nam</strong>, phát sóng trực tiếp trên đài SCTV và toàn bộ nền tảng truyền thông số.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Cơ cấu phễu tuyển chọn (5 cols) -->
+        <div class="lg:col-span-5 card-parchment p-8 sm:p-9 shadow-2xl">
+          <div class="badge-number"><span>5</span></div>
+
+          <div class="pb-4 border-b border-amber-300/80 mb-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-red-800">Quy trình chọn lọc</span>
+            <h3 class="text-2xl font-serif font-black text-brand-redDark uppercase flex items-center gap-2">
+              <i class="fa-solid fa-filter text-red-700"></i>
+              <span>CƠ CẤU TUYỂN CHỌN</span>
+            </h3>
+          </div>
+
+          <p class="text-xs sm:text-sm text-stone-700 mb-6 leading-relaxed">
+            Hội đồng Giám khảo gồm các Nghệ sĩ Nhân dân, Nghệ sĩ Ưu tú, Giảng viên Âm nhạc uy tín áp dụng quy trình đánh giá minh bạch qua các vòng:
+          </p>
+
+          <!-- Funnel Stages Cards -->
+          <div class="space-y-3.5">
+            
+            <div class="p-3.5 rounded-xl bg-white border border-amber-300 shadow-sm flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-red-100 text-red-800 font-bold text-xs flex items-center justify-center">1</span>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Vòng Casting</h4>
+                  <span class="text-[11px] text-stone-500">Sơ tuyển 2 miền</span>
+                </div>
+              </div>
+              <span class="text-xs font-black text-red-800 bg-red-100 px-3 py-1 rounded-full border border-red-200">
+                Chọn 100 thí sinh / bảng / miền
+              </span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white border border-amber-300 shadow-sm flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-red-100 text-red-800 font-bold text-xs flex items-center justify-center">2</span>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Vòng Chung Khảo</h4>
+                  <span class="text-[11px] text-stone-500">Thi đấu chuyên môn</span>
+                </div>
+              </div>
+              <span class="text-xs font-black text-red-800 bg-red-100 px-3 py-1 rounded-full border border-red-200">
+                Chọn 50 thí sinh / bảng / miền
+              </span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-white border border-amber-300 shadow-sm flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-red-100 text-red-800 font-bold text-xs flex items-center justify-center">3</span>
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Vòng Bán Kết</h4>
+                  <span class="text-[11px] text-stone-500">Sân khấu khu vực</span>
+                </div>
+              </div>
+              <span class="text-xs font-black text-red-800 bg-red-100 px-3 py-1 rounded-full border border-red-200">
+                Chọn 25 thí sinh / bảng / miền
+              </span>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-amber-50 border-2 border-red-700 shadow-md flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <span class="w-7 h-7 rounded-full bg-red-800 text-white font-bold text-xs flex items-center justify-center">★</span>
+                <div>
+                  <h4 class="font-black text-red-900 text-sm">Chung Kết Khu Vực</h4>
+                  <span class="text-[11px] text-red-700 font-semibold">Tỏa sáng đỉnh cao</span>
+                </div>
+              </div>
+              <span class="text-xs font-black text-stone-950 bg-amber-300 px-3 py-1 rounded-full border border-amber-400">
+                Chọn TOP 10 / bảng / miền
+              </span>
+            </div>
+
+          </div>
+
+          <div class="mt-6 p-4 rounded-xl bg-red-900/10 border border-red-700/30 text-xs text-stone-800">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-graduation-cap text-red-700 text-base mt-0.5"></i>
+              <span><strong>Đặc quyền TOP thí sinh:</strong> Được Hội đồng cố vấn âm nhạc danh tiếng trực tiếp hướng dẫn luyện thanh, định hình phong cách biểu diễn trước Vòng Chung kết toàn quốc.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. SECTION: CƠ CẤU GIẢI THƯỞNG DANH GIÁ                                    -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-radial-luxury relative border-b border-amber-500/30" id="giai-thuong">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-crown text-amber-400"></i> Vinh Danh Đỉnh Cao Nghệ Thuật
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-gold-gradient mt-2">
+          Cơ Cấu Giải Thưởng Mỗi Bảng
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Áp dụng độc lập và hoàn toàn tương đương cho cả <strong>Bảng Chuyên Nghiệp</strong> và <strong>Bảng Phong Trào</strong> (Từ poster chính thức).
+        </p>
+      </div>
+
+      <!-- Spotlight Grand Champion Card (From Poster Box 6) -->
+      <div class="max-w-4xl mx-auto mb-12">
+        <div class="card-parchment p-8 sm:p-12 shadow-[0_0_60px_rgba(245,197,24,0.45)] border-4 border-amber-400 text-center relative overflow-hidden group">
+          <div class="badge-number"><span>6</span></div>
+
+          <!-- Trophy Icon with Radiant Glow -->
+          <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-amber-500 via-amber-200 to-yellow-500 flex items-center justify-center text-red-950 text-4xl shadow-xl border-2 border-white mb-4 group-hover:scale-110 transition-transform duration-500">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+
+          <span class="text-xs sm:text-sm font-black uppercase tracking-widest text-red-900 bg-amber-200 px-5 py-1.5 rounded-full inline-block border border-amber-400 shadow-sm">
+            01 GIẢI QUÁN QUÂN XUẤT SẮC
+          </span>
+
+          <!-- Huge Prize Number -->
+          <div class="text-4xl sm:text-7xl font-black text-brand-redDark my-4 font-serif tracking-tight drop-shadow-sm">
+            100.000.000<span class="text-2xl sm:text-4xl underline decoration-amber-500">đ</span>
+          </div>
+
+          <p class="text-stone-800 text-sm sm:text-base font-semibold max-w-xl mx-auto leading-relaxed">
+            Kèm <strong>Cúp Mạ Vàng Danh Giá</strong>, Bằng Chứng Nhận từ Ban Tổ Chức, và Đặc Quyền tham gia dự án <strong>sản xuất MV ca nhạc độc quyền phát sóng trên Đài Truyền Hình SCTV</strong>.
+          </p>
+
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-red-800">
+            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Cúp mạ vàng danh giá</span>
+            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Bằng chứng nhận chính thức</span>
+            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Phát sóng MV trên SCTV</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Awards Cards Grid (09 Á quân, 10 Khuyến khích, Các giải phụ) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <!-- 09 Á Quân -->
+        <div class="glass-card glass-card-hover p-6 sm:p-7 rounded-2xl text-center border-amber-400/40 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-stone-950 text-2xl mb-4 shadow-lg">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <span class="text-[10px] uppercase font-bold text-amber-300 tracking-wider">Hạng Mục Nhì</span>
+            <h4 class="text-xl font-serif font-black text-white uppercase mt-1">
+              09 Giải Á Quân
+            </h4>
+            <div class="text-2xl sm:text-3xl font-black text-amber-300 my-3 font-serif">
+              10.000.000đ
+              <span class="text-xs text-stone-400 font-normal block font-sans">/ giải</span>
+            </div>
+            <p class="text-xs text-stone-300 leading-relaxed">
+              Tặng Kỷ niệm chương mạ vàng &amp; Bằng chứng nhận danh dự từ Hội đồng Ban Giám khảo.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-400/20 text-[11px] text-amber-200">
+            Tổng trị giá: 90.000.000đ
+          </div>
+        </div>
+
+        <!-- 10 Khuyến Khích -->
+        <div class="glass-card glass-card-hover p-6 sm:p-7 rounded-2xl text-center border-amber-400/40 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-stone-950 text-2xl mb-4 shadow-lg">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <span class="text-[10px] uppercase font-bold text-amber-300 tracking-wider">Động Viên Tài Năng</span>
+            <h4 class="text-xl font-serif font-black text-white uppercase mt-1">
+              10 Giải Khuyến Khích
+            </h4>
+            <div class="text-2xl sm:text-3xl font-black text-amber-300 my-3 font-serif">
+              5.000.000đ
+              <span class="text-xs text-stone-400 font-normal block font-sans">/ giải</span>
+            </div>
+            <p class="text-xs text-stone-300 leading-relaxed">
+              Vinh danh các giọng ca truyền cảm, có nội lực và tiềm năng phát triển nghệ thuật lớn.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-400/20 text-[11px] text-amber-200">
+            Tổng trị giá: 50.000.000đ
+          </div>
+        </div>
+
+        <!-- Các Giải Phụ -->
+        <div class="glass-card glass-card-hover p-6 sm:p-7 rounded-2xl text-center border-amber-400/40 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-stone-950 text-2xl mb-4 shadow-lg">
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="text-[10px] uppercase font-bold text-amber-300 tracking-wider">Hạng Mục Chuyên Đề</span>
+            <h4 class="text-xl font-serif font-black text-white uppercase mt-1">
+              Các Giải Phụ Chuyên Đề
+            </h4>
+            <div class="text-2xl sm:text-3xl font-black text-amber-300 my-3 font-serif">
+              5.000.000đ
+              <span class="text-xs text-stone-400 font-normal block font-sans">/ giải</span>
+            </div>
+            <p class="text-xs text-stone-300 leading-relaxed">
+              Giọng ca triển vọng, Thí sinh được khán giả bình chọn nhiều nhất, Phong cách biểu diễn ấn tượng.
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-amber-400/20 text-[11px] text-amber-200">
+            Vinh danh nét đặc sắc riêng
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. SECTION: KHOẢNH KHẮC THỰC TẾ & HOẠT ĐỘNG SÂN KHẤU (100% REAL ASSETS)   -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-[#160202] relative border-b border-amber-500/30" id="khoanh-khac">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-camera-retro text-amber-400"></i> Hình Ảnh Thực Tế Sinh Động
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-2">
+          Khoảnh Khắc Sân Khấu &amp; Hội Đồng Giám Khảo
+        </h2>
+        <div class="w-32 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Chiêm ngưỡng những khoảnh khắc rực rỡ, trang nghiêm và tràn đầy nhiệt huyết tại Vòng Casting và các hoạt động thực tế của Cuộc thi Tiếng Hát Màu Hoa Đỏ.
+        </p>
+      </div>
+
+      <!-- Real Photos Grid with Lightbox Interaction -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+        
+        <!-- Large Featured Image: Toàn cảnh sân khấu Vòng Casting (7 cols) -->
+        <div class="md:col-span-7 group relative rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black cursor-pointer shadow-card-luxury" onclick="openLightbox('images/san-khau-casting.jpg', 'Toàn cảnh Sân khấu Vòng Casting - Cuộc thi Tiếng Hát Màu Hoa Đỏ với hệ thống ánh sáng chuyên nghiệp và dàn thí sinh.')">
+          <div class="relative aspect-video w-full overflow-hidden">
+            <img src="images/san-khau-casting.jpg" alt="Toàn cảnh sân khấu Vòng Casting Tiếng Hát Màu Hoa Đỏ" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6 flex items-end justify-between">
+            <div>
+              <span class="bg-red-800 text-amber-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase border border-amber-400/40">
+                Sân Khấu Quy Mô
+              </span>
+              <h3 class="text-lg sm:text-xl font-serif font-bold text-white mt-1.5 drop-shadow-md">
+                Vòng Tuyển Chọn (Casting) Trực Tiếp
+              </h3>
+              <p class="text-xs text-stone-300 mt-0.5 hidden sm:block">
+                Hệ thống sân khấu biểu diễn âm thanh ánh sáng hiện đại cùng hội đồng giám khảo chấm điểm.
+              </p>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-amber-400 text-brand-redDarker flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medium Featured Image: Ban Giám Khảo & Ban Tổ Chức (5 cols) -->
+        <div class="md:col-span-5 group relative rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black cursor-pointer shadow-card-luxury" onclick="openLightbox('images/hoi-dong-giam-khao.jpg', 'Hội đồng Ban Giám khảo, Khách mời & Ban Tổ chức tại Backdrop Vòng Casting Tiếng Hát Màu Hoa Đỏ.')">
+          <div class="relative aspect-[4/3] md:aspect-auto md:h-full w-full overflow-hidden">
+            <img src="images/hoi-dong-giam-khao.jpg" alt="Ban Giám Khảo và Ban Tổ Chức Tiếng Hát Màu Hoa Đỏ" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6 flex items-end justify-between">
+            <div>
+              <span class="bg-amber-400 text-brand-redDarker text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                Hội Đồng Chuyên Môn
+              </span>
+              <h3 class="text-lg font-serif font-bold text-white mt-1.5 drop-shadow-md">
+                Ban Giám Khảo &amp; Ban Tổ Chức
+              </h3>
+              <p class="text-xs text-stone-300 mt-0.5">
+                Các nghệ sĩ, chuyên gia thanh nhạc và cố vấn giàu kinh nghiệm.
+              </p>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-amber-400 text-brand-redDarker flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Grid 1: Thí sinh vẫy chào (6 cols) -->
+        <div class="md:col-span-6 group relative rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black cursor-pointer shadow-card-luxury" onclick="openLightbox('images/thi-sinh-chao.jpg', 'Dàn thí sinh tài năng nhiệt huyết cùng chào đón khán giả và Ban Giám khảo trên sân khấu lớn.')">
+          <div class="relative aspect-video w-full overflow-hidden">
+            <img src="images/thi-sinh-chao.jpg" alt="Dàn thí sinh vẫy chào khán giả tại sân khấu" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between">
+            <div>
+              <span class="bg-red-800 text-amber-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase border border-amber-400/40">
+                Thí Sinh Toàn Quốc
+              </span>
+              <h4 class="text-base sm:text-lg font-serif font-bold text-white mt-1">
+                Không Khí Hào Hùng &amp; Gắn Kết
+              </h4>
+            </div>
+            <div class="w-9 h-9 rounded-full bg-amber-400 text-brand-redDarker flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-expand text-xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Grid 2: Poster Mùa I 2026 (3 cols) -->
+        <div class="md:col-span-3 group relative rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black cursor-pointer shadow-card-luxury" onclick="openLightbox('images/poster-mua-1.jpg', 'Poster Nghệ Thuật Sân Khấu Mùa I - 2026: Lộ trình & Thông tin phát sóng trực tiếp SCTV.')">
+          <div class="relative aspect-[3/4] w-full overflow-hidden">
+            <img src="images/poster-mua-1.jpg" alt="Poster Mùa I - 2026 Sân khấu Tiếng Hát Màu Hoa Đỏ" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
+            <div>
+              <span class="bg-amber-400 text-stone-950 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">
+                Poster Mùa I
+              </span>
+              <h4 class="text-sm font-serif font-bold text-white mt-1">
+                Sân Khấu Nghệ Thuật
+              </h4>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-amber-400 text-stone-950 flex items-center justify-center flex-shrink-0 shadow-lg">
+              <i class="fa-solid fa-expand text-xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Grid 3: Poster Thể Lệ Chi Tiết (3 cols) -->
+        <div class="md:col-span-3 group relative rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black cursor-pointer shadow-card-luxury" onclick="openLightbox('images/poster-the-le.jpg', 'Poster Chính Thức: Đầy đủ 6 hạng mục Thể lệ, Đối tượng, Tuyển chọn, Giải thưởng và Liên hệ.')">
+          <div class="relative aspect-[3/4] w-full overflow-hidden">
+            <img src="images/poster-the-le.jpg" alt="Poster Thể Lệ Chính Thức Tiếng Hát Màu Hoa Đỏ 2026" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
+            <div>
+              <span class="bg-red-800 text-amber-200 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase border border-amber-400/30">
+                Thể Lệ 6 Hạng Mục
+              </span>
+              <h4 class="text-sm font-serif font-bold text-white mt-1">
+                Văn Bản Chính Thức
+              </h4>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-amber-400 text-stone-950 flex items-center justify-center flex-shrink-0 shadow-lg">
+              <i class="fa-solid fa-expand text-xs"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. SECTION: ĐƠN VỊ TỔ CHỨC & BẢO TRỢ TRUYỀN THÔNG                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-radial-hero relative border-b border-amber-500/30" id="don-vi">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-handshake-angle text-amber-400"></i> Độ Uy Tín &amp; Bảo Trợ
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-2">
+          Đơn Vị Tổ Chức &amp; Đồng Hành
+        </h2>
+        <div class="w-32 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Sự kết hợp giữa đơn vị tổ chức chuyên nghiệp và đài truyền hình lớn tạo nên bệ phóng vững chắc cho các tài năng âm nhạc.
+        </p>
+      </div>
+
+      <!-- 2 Main Partners Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Organizer: BENTHANH -->
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border-amber-400/50 shadow-card-luxury flex flex-col justify-between group hover:border-amber-400 transition-all">
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-amber-500/30 mb-6">
+              <span class="bg-red-950 text-amber-300 text-xs font-black uppercase px-3 py-1 rounded-full border border-amber-400/40">
+                Đơn vị tổ chức
+              </span>
+              <span class="text-xs text-stone-400">Ban Tổ Chức Chính Thức</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+              <div class="bg-[#faf6ed] p-3 rounded-2xl border-2 border-amber-300 shadow-md flex items-center justify-center w-36 h-24 flex-shrink-0">
+                <img src="images/logo-benthanh.png" alt="Logo Đơn vị tổ chức BENTHANH" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-serif font-black text-white uppercase text-center sm:text-left">
+                  BENTHANH
+                </h3>
+                <p class="text-amber-300 font-bold text-sm italic text-center sm:text-left">
+                  "Cập Bến Để Thành Công"
+                </p>
+                <p class="text-xs text-stone-300 mt-2 leading-relaxed text-center sm:text-left">
+                  Đơn vị uy tín lâu năm trong lĩnh vực tổ chức sự kiện, sản xuất âm nhạc và các cuộc thi nghệ thuật quy mô lớn.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/40 border border-amber-400/20 text-xs text-stone-300 space-y-2">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-400"></i>
+                <span>Chịu trách nhiệm toàn diện về công tác tổ chức và tuyển chọn.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-400"></i>
+                <span>Đảm bảo tính công bằng, minh bạch và chuyên môn cao.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-amber-500/20 text-xs text-amber-200 text-center sm:text-left">
+            ★ Trụ sở tiếp nhận hồ sơ thí sinh toàn quốc
+          </div>
+        </div>
+
+        <!-- Co-organizer & Media Partner: SCTV -->
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border-amber-400/50 shadow-card-luxury flex flex-col justify-between group hover:border-amber-400 transition-all">
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-amber-500/30 mb-6">
+              <span class="bg-blue-950 text-blue-200 text-xs font-black uppercase px-3 py-1 rounded-full border border-blue-400/40">
+                Đồng hành &amp; Bảo trợ truyền thông
+              </span>
+              <span class="text-xs text-stone-400">Đối Tác Phát Sóng</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
+              <div class="bg-[#faf6ed] p-3 rounded-2xl border-2 border-amber-300 shadow-md flex items-center justify-center w-36 h-24 flex-shrink-0">
+                <img src="images/logo-sctv.png" alt="Logo Đồng hành SCTV" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div>
+                <h3 class="text-2xl font-serif font-black text-white uppercase text-center sm:text-left">
+                  SCTV
+                </h3>
+                <p class="text-amber-300 font-bold text-sm text-center sm:text-left">
+                  Truyền Hình Cáp SCTV
+                </p>
+                <p class="text-xs text-stone-300 mt-2 leading-relaxed text-center sm:text-left">
+                  Hệ thống truyền hình cáp và nội dung số hàng đầu Việt Nam với độ phủ sóng toàn quốc và hàng triệu khán giả theo dõi.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/40 border border-amber-400/20 text-xs text-stone-300 space-y-2">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tower-broadcast text-red-400"></i>
+                <span><strong>Truyền hình trực tiếp Đêm Gala Trao giải</strong> trên kênh SCTV.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-share-nodes text-blue-400"></i>
+                <span>Phát sóng đồng thời trên các kênh Social media chính thức của SCTV.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-amber-500/20 text-xs text-amber-200 text-center sm:text-left">
+            ★ Đảm bảo hình ảnh thí sinh được lan tỏa rộng rãi khắp cả nước
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. SECTION: HỒ SƠ DỰ THI & FORM ĐĂNG KÝ TRỰC TUYẾN                       -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-[#1f0202] relative border-b border-amber-500/30" id="ho-so">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs flex items-center justify-center gap-2">
+          <i class="fa-solid fa-file-circle-check text-amber-400"></i> Thủ Tục Đơn Giản – 100% Miễn Phí
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-black text-white mt-2">
+          Hồ Sơ &amp; Đăng Ký Trực Tuyến
+        </h2>
+        <div class="w-32 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-300 text-sm sm:text-base mt-4">
+          Thí sinh chuẩn bị đầy đủ 3 thành phần hồ sơ theo đúng yêu cầu dưới đây để được xét duyệt vào Vòng Casting Sơ tuyển.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: HỒ SƠ ĐĂNG KÝ (From Poster Box 3) (5 cols) -->
+        <div class="lg:col-span-5 card-parchment p-8 sm:p-10 shadow-2xl" id="the-le">
+          <div class="badge-number"><span>3</span></div>
+
+          <div class="pb-4 border-b border-amber-300/80 mb-6">
+            <span class="text-xs font-bold uppercase tracking-wider text-red-800">Quy định nộp hồ sơ</span>
+            <h3 class="text-2xl font-serif font-black text-brand-redDark uppercase flex items-center gap-2.5">
+              <i class="fa-solid fa-folder-open text-red-700"></i>
+              <span>HỒ SƠ ĐĂNG KÝ</span>
+            </h3>
+          </div>
+
+          <p class="text-xs sm:text-sm text-stone-700 font-medium mb-6 leading-relaxed">
+            Hồ sơ hợp lệ bao gồm đầy đủ 03 thành phần sau (có thể nộp online tại form bên cạnh hoặc gửi trực tiếp qua Email / Zalo BTC):
+          </p>
+
+          <ul class="space-y-4 text-stone-800 text-sm font-medium">
+            
+            <li class="p-4 rounded-xl bg-white border-2 border-amber-300/90 shadow-sm flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-red-100 text-red-800 flex items-center justify-center flex-shrink-0 text-base mt-0.5">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold text-base">1. Phiếu đăng ký dự thi</strong>
+                <span class="text-stone-600 text-xs">Theo mẫu chuẩn của BTC (điền trực tuyến tại form bên cạnh hoặc file mẫu gửi qua email).</span>
+              </div>
+            </li>
+
+            <li class="p-4 rounded-xl bg-white border-2 border-amber-300/90 shadow-sm flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-red-100 text-red-800 flex items-center justify-center flex-shrink-0 text-base mt-0.5">
+                <i class="fa-solid fa-file-audio"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold text-base">2. 01 Bài hát mẫu</strong>
+                <span class="text-stone-600 text-xs">File thu âm audio rõ giọng (MP3) hoặc video tự quay thể hiện ca khúc cách mạng (gửi link Youtube/Drive).</span>
+              </div>
+            </li>
+
+            <li class="p-4 rounded-xl bg-white border-2 border-amber-300/90 shadow-sm flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-red-100 text-red-800 flex items-center justify-center flex-shrink-0 text-base mt-0.5">
+                <i class="fa-solid fa-id-badge"></i>
+              </div>
+              <div>
+                <strong class="block text-stone-900 font-bold text-base">3. 03 Hình ảnh cá nhân</strong>
+                <span class="text-stone-600 text-xs">01 ảnh chân dung nghệ thuật rõ nét và 02 ảnh toàn thân phong cách trang nhã, lịch sự.</span>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Big Free Registration Notice from Poster -->
+          <div class="mt-8 p-5 rounded-2xl bg-gradient-to-r from-red-800 to-red-950 border-2 border-amber-400 text-center shadow-lg">
+            <span class="block text-amber-300 text-[11px] uppercase font-black tracking-widest">
+              ĐẶC QUYỀN DÀNH CHO THÍ SINH
+            </span>
+            <div class="text-xl sm:text-2xl font-serif font-black text-white mt-1">
+              ★ MIỄN PHÍ ĐĂNG KÝ DỰ THI ★
+            </div>
+            <p class="text-xs text-amber-100/90 mt-1 leading-snug">
+              Ban Tổ Chức không thu bất kỳ khoản lệ phí nộp hồ sơ nào từ thí sinh trong suốt quá trình đăng ký.
+            </p>
+          </div>
+
+          <!-- Direct Submission Contacts Box -->
+          <div class="mt-6 p-4 rounded-xl bg-amber-100/60 border border-amber-300 text-xs text-stone-700">
+            <span class="font-bold text-red-900 block mb-1">Cần hỗ trợ hồ sơ hoặc nộp trực tiếp?</span>
+            <span>Liên hệ Nhà báo Duy Mạnh qua Hotline / Zalo: <strong class="text-red-800">0938 808 886</strong> hoặc gửi về email: <strong class="text-red-800">ceoduymanh@gmail.com</strong>.</span>
+          </div>
+
+        </div>
+
+        <!-- Right: ONLINE REGISTRATION FORM (High Conversion Form) (7 cols) -->
+        <div class="lg:col-span-7 bg-[#280303] p-7 sm:p-10 rounded-3xl border-2 border-amber-400/70 shadow-card-luxury relative" id="dang-ky">
+          
+          <div class="flex flex-wrap items-center justify-between border-b border-amber-500/30 pb-4 mb-6 gap-2">
+            <div>
+              <span class="text-amber-400 text-xs uppercase font-bold tracking-widest">Cổng Đăng Ký Trực Tuyến</span>
+              <h3 class="text-2xl sm:text-3xl font-serif font-black text-white mt-0.5">
+                PHIẾU ĐĂNG KÝ DỰ THI 2026
+              </h3>
+            </div>
+            <span class="bg-red-950 text-amber-300 text-xs px-3.5 py-1.5 rounded-full border border-amber-400/50 font-semibold">
+              MÙA I - 2026
+            </span>
+          </div>
+
+          <!-- Registration Form -->
+          <form id="contestForm" onsubmit="handleRegistrationSubmit(event)" class="space-y-4">
+            
+            <!-- Row 1: Name and Birth Year -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Họ và tên thí sinh <span class="text-red-400">*</span>
+                </label>
+                <input type="text" id="fullName" required placeholder="Ví dụ: Nguyễn Văn Mạnh" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Năm sinh (từ 16 tuổi) <span class="text-red-400">*</span>
+                </label>
+                <input type="number" id="birthYear" required min="1940" max="2010" placeholder="Ví dụ: 2002" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              </div>
+            </div>
+
+            <!-- Row 2: Phone & Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Số điện thoại / Zalo <span class="text-red-400">*</span>
+                </label>
+                <input type="tel" id="phoneNumber" required placeholder="09xx xxx xxx" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Email liên hệ <span class="text-red-400">*</span>
+                </label>
+                <input type="email" id="email" required placeholder="thi-sinh@example.com" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              </div>
+            </div>
+
+            <!-- Row 3: Competition Division & Casting Region -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Chọn bảng thi <span class="text-red-400">*</span>
+                </label>
+                <select id="competitionTable" required class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 transition-colors cursor-pointer">
+                  <option value="chuyen-nghiep">Bảng Chuyên Nghiệp (Ca sĩ, Trường nghệ thuật)</option>
+                  <option value="phong-trao" selected>Bảng Phong Trào (Mọi đối tượng yêu ca hát)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                  Khu vực thi Casting <span class="text-red-400">*</span>
+                </label>
+                <select id="castingRegion" required class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 transition-colors cursor-pointer">
+                  <option value="ha-noi">Khu vực Hà Nội (Miền Bắc)</option>
+                  <option value="tp-hcm" selected>Khu vực TP. Hồ Chí Minh (Miền Nam)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 4: Song Name -->
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                Tên bài hát đăng ký dự thi (Dòng nhạc cách mạng) <span class="text-red-400">*</span>
+              </label>
+              <input type="text" id="songName" required placeholder="Ví dụ: Màu Hoa Đỏ, Giai điệu Tổ quốc, Đất nước trọn niềm vui..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+            </div>
+
+            <!-- Row 5: Demo Audio / Video Link -->
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
+                Link Audio / Video bài hát mẫu (Google Drive / Youtube / Facebook)
+              </label>
+              <input type="url" id="demoLink" placeholder="https://drive.google.com/... hoặc https://youtube.com/..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              <p class="text-[11px] text-stone-400 mt-1">
+                * Nếu dùng Google Drive, vui lòng mở quyền truy cập "Bất kỳ ai có đường liên kết". Nếu chưa có link, bạn có thể gửi file qua Zalo/Email BTC sau.
+              </p>
+            </div>
+
+            <!-- Checkbox Terms -->
+            <div class="pt-2">
+              <label class="flex items-start gap-2.5 text-xs text-stone-300 cursor-pointer">
+                <input type="checkbox" required checked class="mt-0.5 rounded border-amber-400/50 bg-[#180202] text-amber-400 focus:ring-amber-400 focus:ring-offset-0" />
+                <span>Tôi cam kết các thông tin đăng ký trên là hoàn toàn chính xác và đồng ý tuân thủ toàn bộ quy chế của Ban Tổ Chức Cuộc Thi Tiếng Hát Màu Hoa Đỏ 2026.</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-3">
+              <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gold-gradient hover:brightness-110 text-brand-redDarker font-black uppercase tracking-wider text-base shadow-gold-glow transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>GỬI HỒ SƠ ĐĂNG KÝ TRỰC TUYẾN</span>
+              </button>
+            </div>
+
+            <p class="text-center text-xs text-stone-400 pt-2">
+              🔒 Thông tin thí sinh được bảo mật tuyệt đối theo quy chế ban hành của Ban Tổ Chức.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. SECTION: FAQ - HỎI ĐÁP THẮC MẮC THƯỜNG GẶP                             -->
+  <!-- ========================================================================= -->
+  <section class="py-20 bg-radial-luxury relative border-b border-amber-500/30" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-14">
+        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs">Giải Đáp Thắc Mắc</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-black text-white mt-2">
+          Câu Hỏi Thường Gặp
+        </h2>
+        <div class="w-24 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- FAQ Accordion List -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
+            <span class="text-base sm:text-lg flex items-center gap-3">
+              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+              Cuộc thi có thu bất kỳ lệ phí nộp hồ sơ hay thi cử nào không?
+            </span>
+            <i id="faqIcon-1" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-1" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
+            <strong>Hoàn toàn KHÔNG!</strong> Ban Tổ Chức cam kết chính thức: Thí sinh <strong>100% miễn phí</strong> đăng ký và không phải đóng bất kỳ khoản chi phí nào khi tham gia cuộc thi.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
+            <span class="text-base sm:text-lg flex items-center gap-3">
+              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+              Người chưa từng học thanh nhạc bài bản có tham gia được không?
+            </span>
+            <i id="faqIcon-2" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-2" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
+            Rất hoan nghênh! Cuộc thi có riêng <strong>Bảng Phong Trào</strong> dành cho mọi tầng lớp nhân dân, cán bộ, công nhân viên chức và học sinh sinh viên không qua đào tạo chuyên sâu. Tiêu chí chấm điểm của bảng này chú trọng vào cảm xúc, sự chân thực và niềm đam mê ca khúc quê hương cách mạng.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
+            <span class="text-base sm:text-lg flex items-center gap-3">
+              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+              Thí sinh ở tỉnh xa hoặc ở nước ngoài đăng ký thế nào?
+            </span>
+            <i id="faqIcon-3" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-3" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
+            Bạn có thể điền form đăng ký online tại trang web này và đính kèm video/audio dự thi. Vòng Casting sẽ diễn ra tại 02 địa điểm tập trung là <strong>Hà Nội (Miền Bắc)</strong> và <strong>TP. Hồ Chí Minh (Miền Nam)</strong>, thí sinh có thể chủ động lựa chọn khu vực thuận tiện nhất để tham gia.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
+          <button onclick="toggleFaq(4)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
+            <span class="text-base sm:text-lg flex items-center gap-3">
+              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
+              Ca khúc dự thi bao gồm những thể loại bài hát nào?
+            </span>
+            <i id="faqIcon-4" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-4" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
+            Tất cả các ca khúc thuộc <strong>dòng nhạc truyền thống cách mạng, ca ngợi quê hương đất nước, Đảng, Bác Hồ, người lính và lịch sử hào hùng của dân tộc Việt Nam</strong> được Bộ Văn hóa Thể thao và Du lịch cho phép lưu hành.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 12. SECTION: LIÊN HỆ TIẾP NHẬN HỒ SƠ CHÍNH THỨC                            -->
+  <!-- ========================================================================= -->
+  <section class="py-16 bg-[#120101] relative border-b border-amber-500/40" id="lien-he">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-r from-[#3c0404] via-[#520707] to-[#3c0404] p-8 sm:p-12 rounded-3xl border-2 border-amber-400 shadow-card-luxury">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-amber-300 text-xs uppercase font-extrabold tracking-widest">
+            Kênh Tiếp Nhận Hồ Sơ &amp; Hotline Hỗ Trợ 24/7
+          </span>
+          <h3 class="text-2xl sm:text-4xl font-serif font-black text-white mt-1">
+            Thông Tin Ban Tổ Chức Chính Thức
+          </h3>
+          <div class="w-20 h-0.5 bg-amber-400 mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+          
+          <!-- Contact 1: Trưởng ban tiếp nhận: Nhà báo Duy Mạnh -->
+          <div class="flex items-center justify-center md:justify-start space-x-4 border-b md:border-b-0 md:border-r border-amber-400/30 pb-6 md:pb-0 md:pr-6">
+            <div class="w-16 h-16 rounded-2xl bg-red-950 border-2 border-amber-300 flex items-center justify-center text-amber-300 text-2xl flex-shrink-0 shadow-lg">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-amber-200 block font-medium">Mọi chi tiết xin gửi về:</span>
+              <h4 class="text-lg sm:text-xl font-serif font-black text-amber-300 uppercase tracking-wide mt-0.5">
+                Nhà báo DUY MẠNH
+              </h4>
+              <span class="text-[11px] text-stone-300 block">Trưởng ban tiếp nhận hồ sơ</span>
+            </div>
+          </div>
+
+          <!-- Contact 2: Email chính thức -->
+          <div class="flex items-center justify-center md:justify-start space-x-4 border-b md:border-b-0 md:border-r border-amber-400/30 pb-6 md:pb-0 md:pr-6">
+            <div class="w-16 h-16 rounded-2xl bg-red-950 border-2 border-amber-300 flex items-center justify-center text-amber-300 text-2xl flex-shrink-0 shadow-lg">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-amber-200 block font-medium">Hộp thư điện tử chính thức:</span>
+              <a href="mailto:ceoduymanh@gmail.com" class="text-base sm:text-lg font-bold text-white hover:text-amber-300 transition-colors block mt-0.5 break-all">
+                ceoduymanh@gmail.com
+              </a>
+              <span class="text-[11px] text-stone-300 block">Tiếp nhận file ghi âm &amp; ảnh</span>
+            </div>
+          </div>
+
+          <!-- Contact 3: Hotline & Zalo -->
+          <div class="flex items-center justify-center md:justify-start space-x-4">
+            <div class="w-16 h-16 rounded-2xl bg-red-950 border-2 border-amber-300 flex items-center justify-center text-amber-300 text-2xl flex-shrink-0 shadow-lg">
+              <i class="fa-solid fa-phone-volume animate-bounce"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase tracking-wider text-amber-200 block font-medium">Hotline &amp; Zalo tư vấn:</span>
+              <a href="tel:0938808886" class="text-2xl sm:text-3xl font-black text-amber-300 hover:text-white transition-colors block mt-0.5 tracking-tight font-serif">
+                0938 808 886
+              </a>
+              <span class="text-[11px] text-stone-300 block">Tư vấn tuyển sinh trực tiếp</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 13. SITE FOOTER                                                           -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#0b0101] text-stone-400 py-14 text-sm border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info & Logos (5 cols) -->
+        <div class="md:col-span-5 text-center md:text-left">
+          <div class="flex items-center justify-center md:justify-start gap-3.5 mb-4">
+            <div class="w-12 h-12 rounded-full p-1 bg-gradient-to-tr from-amber-500 to-yellow-200 shadow-md flex-shrink-0">
+              <div class="w-10 h-10 rounded-full overflow-hidden bg-[#faf6ed] flex items-center justify-center">
+                <img src="images/logo-cuoc-thi.png" alt="Logo Cuộc thi Tiếng Hát Màu Hoa Đỏ" class="w-full h-full object-contain p-0.5" />
+              </div>
+            </div>
+            <div class="text-left">
+              <span class="block text-[10px] uppercase tracking-widest text-amber-400 font-bold">Cuộc Thi Toàn Quốc 2026</span>
+              <span class="font-serif font-black text-lg text-white uppercase">Màu Hoa Đỏ</span>
+            </div>
+          </div>
+
+          <p class="text-xs text-stone-400 leading-relaxed max-w-sm mx-auto md:mx-0">
+            Cuộc thi Tiếng Hát Màu Hoa Đỏ 2026 – Chủ đề: "Âm Vang Truyền Thống – Khát Vọng Tương Lai". Sân khấu vinh danh các khúc ca cách mạng hào hùng của dân tộc Việt Nam.
+          </p>
+
+          <!-- Logos Organizer & Sponsor in Footer -->
+          <div class="flex items-center justify-center md:justify-start gap-3 mt-5">
+            <div class="h-9 px-2.5 bg-[#faf6ed] rounded-lg border border-amber-300/60 flex items-center justify-center" title="Đơn vị tổ chức BENTHANH">
+              <img src="images/logo-benthanh.png" alt="BENTHANH" class="h-6 w-auto object-contain" />
+            </div>
+            <div class="h-9 px-2.5 bg-[#faf6ed] rounded-lg border border-amber-300/60 flex items-center justify-center" title="Đồng hành SCTV">
+              <img src="images/logo-sctv.png" alt="SCTV" class="h-6 w-auto object-contain" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Navigation Links (3 cols) -->
+        <div class="md:col-span-3 text-center md:text-left">
+          <h4 class="text-xs font-black uppercase tracking-wider text-amber-300 mb-4">
+            Liên Kết Điều Hướng
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#gioi-thieu" class="hover:text-amber-300 transition-colors">Về Cuộc Thi &amp; Mục Đích</a></li>
+            <li><a href="#doi-tuong" class="hover:text-amber-300 transition-colors">Đối Tượng &amp; 02 Bảng Thi</a></li>
+            <li><a href="#lo-trinh" class="hover:text-amber-300 transition-colors">Lộ Trình &amp; Tuyển Chọn</a></li>
+            <li><a href="#giai-thuong" class="hover:text-amber-300 transition-colors">Cơ Cấu Giải Thưởng 100 Tr.đ</a></li>
+            <li><a href="#khoanh-khac" class="hover:text-amber-300 transition-colors">Hình Ảnh Thực Tế Sân Khấu</a></li>
+            <li><a href="#dang-ky" class="hover:text-amber-300 transition-colors">Đăng Ký Dự Thi Trực Tuyến</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Legal (4 cols) -->
+        <div class="md:col-span-4 text-center md:text-left">
+          <h4 class="text-xs font-black uppercase tracking-wider text-amber-300 mb-4">
+            Ban Tiếp Nhận Hồ Sơ
+          </h4>
+          <p class="text-xs text-stone-400 mb-2">
+            <strong>Trưởng ban:</strong> Nhà báo Duy Mạnh
+          </p>
+          <p class="text-xs text-stone-400 mb-2">
+            <strong>Hotline &amp; Zalo:</strong> <a href="tel:0938808886" class="text-amber-300 font-bold hover:underline">0938 808 886</a>
+          </p>
+          <p class="text-xs text-stone-400 mb-4">
+            <strong>Email:</strong> <a href="mailto:ceoduymanh@gmail.com" class="text-amber-300 hover:underline">ceoduymanh@gmail.com</a>
+          </p>
+          <div class="flex items-center justify-center md:justify-start space-x-3 text-stone-400">
+            <a href="https://zalo.me/0938808886" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-stone-900 border border-stone-700 flex items-center justify-center hover:text-amber-300 hover:border-amber-400 transition-colors" title="Zalo">
+              <i class="fa-solid fa-comment-dots text-xs"></i>
+            </a>
+            <a href="tel:0938808886" class="w-8 h-8 rounded-full bg-stone-900 border border-stone-700 flex items-center justify-center hover:text-amber-300 hover:border-amber-400 transition-colors" title="Gọi hotline">
+              <i class="fa-solid fa-phone text-xs"></i>
+            </a>
+            <a href="mailto:ceoduymanh@gmail.com" class="w-8 h-8 rounded-full bg-stone-900 border border-stone-700 flex items-center justify-center hover:text-amber-300 hover:border-amber-400 transition-colors" title="Gửi email">
+              <i class="fa-solid fa-envelope text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright strip -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4 text-center">
+        <p>© 2026 Bản quyền thuộc Ban Tổ Chức Cuộc Thi Tiếng Hát Màu Hoa Đỏ. Mọi quyền được bảo lưu.</p>
+        <div class="flex space-x-6">
+          <a href="#the-le" class="hover:text-stone-300">Quy Chế &amp; Thể Lệ</a>
+          <a href="#ho-so" class="hover:text-stone-300">Hồ Sơ Nộp Mẫu</a>
+          <a href="#dang-ky" class="text-amber-400 hover:underline">Đăng Ký Miễn Phí</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING QUICK ACTION BAR (HOTLINE & ZALO & BACK TO TOP)                  -->
+  <!-- ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
+    
+    <!-- Zalo Floating Button -->
+    <a href="https://zalo.me/0938808886" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all transform hover:-translate-x-1" title="Tư vấn Zalo Nhà báo Duy Mạnh">
+      <i class="fa-solid fa-comment-dots text-lg"></i>
+      <span class="text-xs font-bold hidden sm:inline">Zalo: 0938 808 886</span>
+    </a>
+
+    <!-- Phone Call Floating Button with Pulsing Wave -->
+    <a href="tel:0938808886" class="relative group flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white px-4 py-3 rounded-full shadow-red-glow transition-all transform hover:scale-105" title="Gọi Hotline Tuyển sinh">
+      <span class="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-40"></span>
+      <i class="fa-solid fa-phone-volume text-lg relative z-10"></i>
+      <span class="text-xs font-black uppercase tracking-wider relative z-10 hidden sm:inline">0938 808 886</span>
+    </a>
+
+    <!-- Back to top button -->
+    <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-stone-900/90 border border-amber-400/50 text-amber-300 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-amber-400 hover:text-stone-950 shadow-lg" aria-label="Lên đầu trang">
+      <i class="fa-solid fa-arrow-up text-xs"></i>
+    </button>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE LIGHTBOX MODAL                                                -->
+  <!-- ========================================================================= -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/95 opacity-0 invisible flex flex-col items-center justify-center p-4 sm:p-8 backdrop-blur-md">
+    
+    <!-- Close button -->
+    <button onclick="closeLightbox()" class="absolute top-5 right-5 sm:top-8 sm:right-8 w-12 h-12 rounded-full bg-stone-900 border border-amber-400 text-amber-300 hover:bg-amber-400 hover:text-stone-950 flex items-center justify-center text-xl transition-colors z-50" aria-label="Đóng cửa sổ">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Modal Content -->
+    <div class="relative max-w-5xl max-h-[85vh] flex flex-col items-center">
+      <div class="p-2 rounded-2xl border-2 border-amber-400/80 bg-stone-950 shadow-2xl overflow-hidden max-h-[75vh]">
+        <img id="lightboxImg" src="" alt="Ảnh chi tiết" class="max-h-[70vh] w-auto max-w-full object-contain rounded-xl" />
+      </div>
+      <p id="lightboxCaption" class="text-amber-200 text-xs sm:text-sm mt-4 text-center max-w-2xl font-medium"></p>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SUCCESS CONFIRMATION MODAL                                                -->
+  <!-- ========================================================================= -->
+  <div id="successModal" class="fixed inset-0 z-50 bg-black/90 opacity-0 invisible flex items-center justify-center p-4 backdrop-blur-md transition-all duration-300">
+    <div class="card-parchment max-w-lg w-full p-8 sm:p-10 text-center shadow-[0_0_60px_rgba(245,197,24,0.6)] border-4 border-amber-400 relative">
+      <div class="w-20 h-20 rounded-full bg-green-700 text-amber-200 border-2 border-amber-300 flex items-center justify-center text-4xl mx-auto mb-4 shadow-lg">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <span class="text-xs font-bold uppercase tracking-wider text-red-800 bg-amber-200 px-3 py-1 rounded-full">
+        Đăng ký thành công!
+      </span>
+      <h3 class="text-2xl font-serif font-black text-brand-redDark mt-3">
+        CHÚC MỪNG BẠN ĐÃ NỘP HỒ SƠ!
+      </h3>
+      <p class="text-xs sm:text-sm text-stone-700 mt-2 leading-relaxed">
+        Hồ sơ dự thi <strong class="text-brand-redDark">Cuộc thi Tiếng Hát Màu Hoa Đỏ 2026</strong> của bạn đã được chuyển tới Ban Tiếp Nhận.
+      </p>
+      <div class="my-4 p-4 rounded-xl bg-amber-100/80 border border-amber-300 text-xs text-left space-y-1">
+        <div><strong>Họ và tên:</strong> <span id="summaryName">-</span></div>
+        <div><strong>Bảng dự thi:</strong> <span id="summaryTable">-</span></div>
+        <div><strong>Khu vực:</strong> <span id="summaryRegion">-</span></div>
+        <div><strong>Bài hát đăng ký:</strong> <span id="summarySong">-</span></div>
+      </div>
+      <p class="text-xs text-stone-600 italic">
+        Trưởng ban tiếp nhận – Nhà báo Duy Mạnh sẽ liên hệ xác nhận qua Số điện thoại / Zalo của bạn trong thời gian sớm nhất.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="https://zalo.me/0938808886" target="_blank" class="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+          <i class="fa-solid fa-comment-dots"></i> Nhắn Zalo Xác Nhận
+        </a>
+        <button onclick="closeSuccessModal()" class="flex-1 py-3 rounded-xl bg-brand-redDark hover:bg-red-900 text-amber-200 font-bold text-xs uppercase tracking-wider">
+          Đóng Cửa Sổ
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT: CONTROLLER & ANIMATIONS                                      -->
+  <!-- ========================================================================= -->
+  <script>
+    // 1. Mobile Menu Drawer Controller (Smooth Off-Canvas & Scroll Lock)
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileBackdrop = document.getElementById('mobileBackdrop');
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+    function openMobileMenu() {
+      if (mobileDrawer) mobileDrawer.classList.remove('translate-x-full');
+      if (mobileBackdrop) mobileBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.classList.add('overflow-hidden');
+      if (hamburgerIcon) {
+        hamburgerIcon.classList.remove('fa-bars');
+        hamburgerIcon.classList.add('fa-xmark');
+      }
+    }
+
+    function closeMobileMenu() {
+      if (mobileDrawer) mobileDrawer.classList.add('translate-x-full');
+      if (mobileBackdrop) mobileBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      document.body.classList.remove('overflow-hidden');
+      if (hamburgerIcon) {
+        hamburgerIcon.classList.remove('fa-xmark');
+        hamburgerIcon.classList.add('fa-bars');
+      }
+    }
+
+    function toggleMobileMenu() {
+      if (mobileDrawer && mobileDrawer.classList.contains('translate-x-full')) {
+        openMobileMenu();
+      } else {
+        closeMobileMenu();
+      }
+    }
+
+    // 2. Back to Top Button Visibility
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100');
+      }
+    });
+
+    // 3. Real-Time Countdown to Gala Night (22/12/2026)
+    function updateCountdown() {
+      const galaDate = new Date('2026-12-22T19:30:00+07:00').getTime();
+      const now = new Date().getTime();
+      const diff = galaDate - now;
+
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('daysCount').innerText = days;
+        document.getElementById('hoursCount').innerText = hours.toString().padStart(2, '0');
+        document.getElementById('minsCount').innerText = minutes.toString().padStart(2, '0');
+        document.getElementById('secsCount').innerText = seconds.toString().padStart(2, '0');
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 4. Interactive Lightbox Modal
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+
+    function openLightbox(src, caption) {
+      if (!lightboxModal) return;
+      lightboxImg.src = src;
+      lightboxCaption.innerText = caption || '';
+      lightboxModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      if (!lightboxModal) return;
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Keyboard navigation for Lightbox & Modals
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeSuccessModal();
+        closeMobileMenu();
+      }
+    });
+
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+          closeLightbox();
+        }
+      });
+    }
+
+    // 5. FAQ Accordion Toggle
+    function toggleFaq(index) {
+      const content = document.getElementById(`faqContent-${index}`);
+      const icon = document.getElementById(`faqIcon-${index}`);
+      if (content) {
+        const isOpen = !content.classList.contains('hidden');
+        // Close all
+        document.querySelectorAll('[id^="faqContent-"]').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('[id^="faqIcon-"]').forEach(el => el.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      }
+    }
+
+    // 6. Select Division Quick Anchor helper
+    function selectTable(val) {
+      const selectEl = document.getElementById('competitionTable');
+      if (selectEl) {
+        selectEl.value = val;
+      }
+    }
+
+    // 7. Mini Audio Demo Toggle
+    let isAudioPlaying = false;
+    function toggleAudioDemo() {
+      const icon = document.getElementById('audioIcon');
+      const title = document.getElementById('songTitle');
+      isAudioPlaying = !isAudioPlaying;
+      if (isAudioPlaying) {
+        icon.className = 'fa-solid fa-pause text-sm';
+        title.innerText = 'Đang phát âm hưởng: "Màu Hoa Đỏ" (Nhạc sĩ Thuận Yến)';
+      } else {
+        icon.className = 'fa-solid fa-play text-sm';
+        title.innerText = 'Ca khúc: "Màu Hoa Đỏ" (Nhạc sĩ Thuận Yến)';
+      }
+    }
+
+    // 8. Form Submission & Success Modal Handler
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('fullName').value;
+      const compTable = document.getElementById('competitionTable');
+      const tableText = compTable.options[compTable.selectedIndex].text;
+      const region = document.getElementById('castingRegion');
+      const regionText = region.options[region.selectedIndex].text;
+      const songName = document.getElementById('songName').value;
+
+      document.getElementById('summaryName').innerText = fullName;
+      document.getElementById('summaryTable').innerText = tableText;
+      document.getElementById('summaryRegion').innerText = regionText;
+      document.getElementById('summarySong').innerText = songName;
+
+      const successModal = document.getElementById('successModal');
+      successModal.classList.remove('opacity-0', 'invisible');
+      successModal.classList.add('opacity-100');
+    }
+
+    function closeSuccessModal() {
+      const successModal = document.getElementById('successModal');
+      if (successModal) {
+        successModal.classList.add('opacity-0', 'invisible');
+        successModal.classList.remove('opacity-100');
+      }
+    }
+
+    // 9. Floating Gold Embers / Star Particle Canvas in Hero
+    const canvas = document.getElementById('heroCanvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const particleCount = 45;
+
+      function resizeCanvas() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      class Particle {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2.2 + 0.6;
+          this.speedY = Math.random() * -0.5 - 0.15;
+          this.speedX = (Math.random() - 0.5) * 0.3;
+          this.opacity = Math.random() * 0.7 + 0.2;
+          this.fadeSpeed = Math.random() * 0.008 + 0.002;
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.opacity -= this.fadeSpeed;
+          if (this.opacity <= 0 || this.y < 0) {
+            this.reset();
+            this.y = canvas.height + 5;
+          }
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(245, 197, 24, ${this.opacity})`;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = 'rgba(255, 215, 0, 0.8)';
+          ctx.fill();
+        }
+      }
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animateParticles);
+      }
+      animateParticles();
+    }
+  </script>
+
+</body>
+</html>
