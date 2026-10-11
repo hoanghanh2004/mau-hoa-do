@@ -165,6 +165,35 @@
       }
     }
 
+    /* Gala Banner Glowing Pulse Animation */
+    @keyframes galaGlowPulse {
+      0%, 100% {
+        box-shadow: 0 0 25px rgba(245, 197, 24, 0.2), 0 10px 40px rgba(0, 0, 0, 0.7);
+        border-color: rgba(245, 197, 24, 0.55);
+      }
+      50% {
+        box-shadow: 0 0 45px rgba(245, 197, 24, 0.45), 0 0 25px rgba(220, 38, 38, 0.35), 0 15px 50px rgba(0, 0, 0, 0.85);
+        border-color: rgba(253, 224, 71, 0.95);
+      }
+    }
+
+    .gala-banner-glow {
+      animation: galaGlowPulse 4s ease-in-out infinite;
+    }
+
+    /* Countdown Digit Box Styling (Plum & Gold) */
+    .countdown-card-plum {
+      background: linear-gradient(180deg, #320404 0%, #170101 100%);
+      border: 1.5px solid rgba(245, 197, 24, 0.5);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .countdown-card-plum:hover {
+      border-color: #fbd561;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 197, 24, 0.25);
+    }
+
     /* Gold Border Effects */
     .gold-frame {
       border: 2px solid transparent;
@@ -622,86 +651,115 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 3. COUNTDOWN TO GALA NIGHT & REVOLUTIONARY MUSIC PLAYER CALLOUT            -->
+  <!-- 3. COUNTDOWN TO GALA NIGHT (FULL-WIDTH LUXURY BANNER)                     -->
   <!-- ========================================================================= -->
-  <section class="py-10 bg-[#160202] border-b border-amber-500/30 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-r from-[#2e0303] via-[#480606] to-[#2e0303] rounded-3xl border-2 border-amber-400/60 p-6 sm:p-8 shadow-card-luxury">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+  <section class="py-12 sm:py-16 bg-[#160202] border-b border-amber-500/30 relative overflow-hidden" id="dem-gala">
+    <!-- Subtle Background Ambient Light Flares -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-36 bg-red-600/10 blur-3xl pointer-events-none rounded-full"></div>
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-400/10 blur-[100px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Full-Width Grand Gala Banner Box with Glowing Pulse Border -->
+      <div class="gala-banner-glow bg-gradient-to-b from-[#3a0505] via-[#240303] to-[#150202] rounded-3xl border-2 border-amber-400/70 p-6 sm:p-10 md:p-12 text-center relative overflow-hidden shadow-2xl">
+        
+        <!-- Corner Gold Accent Ornaments -->
+        <div class="absolute top-3 left-3 text-amber-400/30 text-xl hidden sm:block pointer-events-none">
+          <i class="fa-solid fa-bahai"></i>
+        </div>
+        <div class="absolute top-3 right-3 text-amber-400/30 text-xl hidden sm:block pointer-events-none">
+          <i class="fa-solid fa-bahai"></i>
+        </div>
+        <div class="absolute bottom-3 left-3 text-amber-400/30 text-xl hidden sm:block pointer-events-none">
+          <i class="fa-solid fa-bahai"></i>
+        </div>
+        <div class="absolute bottom-3 right-3 text-amber-400/30 text-xl hidden sm:block pointer-events-none">
+          <i class="fa-solid fa-bahai"></i>
+        </div>
+
+        <!-- Top Badge: Official Milestone Countdown -->
+        <div class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-1.5 rounded-full bg-red-950/90 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-widest shadow-inner mb-4">
+          <i class="fa-solid fa-crown text-amber-400 animate-pulse"></i>
+          <span>Đếm Ngược Sự Kiện Trọng Đại Toàn Quốc</span>
+          <i class="fa-solid fa-crown text-amber-400 animate-pulse"></i>
+        </div>
+
+        <!-- Main Majestic Title -->
+        <h3 class="text-2xl sm:text-4xl md:text-5xl font-serif font-black text-gold-gradient tracking-wide uppercase drop-shadow-md leading-tight max-w-4xl mx-auto">
+          ĐÊM GALA VINH DANH &amp; TRAO GIẢI TOÀN QUỐC
+        </h3>
+
+        <!-- Elegant Gold Divider -->
+        <div class="w-36 sm:w-48 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto my-3 sm:my-4 rounded-full"></div>
+
+        <!-- Date & Anniversary Description -->
+        <p class="text-stone-200 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          Kỷ niệm <strong>Ngày thành lập Quân đội Nhân dân Việt Nam</strong> 
+          <span class="text-amber-400 font-bold block sm:inline sm:ml-1">— Chính thức diễn ra ngày <strong>22/12/2026</strong></span>
+        </p>
+
+        <!-- Live Broadcast & Venue Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 mt-4 text-xs sm:text-sm text-stone-300">
+          <span class="inline-flex items-center gap-2 bg-red-950/70 px-3.5 py-1.5 rounded-full border border-amber-400/40 shadow-sm font-medium">
+            <i class="fa-solid fa-tower-broadcast text-red-500 animate-pulse"></i>
+            <span>Truyền hình trực tiếp trên kênh <strong>SCTV</strong></span>
+          </span>
+          <span class="inline-flex items-center gap-2 bg-red-950/70 px-3.5 py-1.5 rounded-full border border-amber-400/40 shadow-sm font-medium">
+            <i class="fa-solid fa-location-dot text-amber-400"></i>
+            <span>Hà Nội &amp; TP. Hồ Chí Minh</span>
+          </span>
+        </div>
+
+        <!-- Group of 4 Balanced Countdown Boxes (Centered & Symmetrical) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-5 md:gap-6 max-w-3xl mx-auto mt-8 sm:mt-10">
           
-          <!-- Left: Gala Night Countdown -->
-          <div class="lg:col-span-7 text-center lg:text-left">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-2">
-              <i class="fa-regular fa-clock"></i> Đếm ngược sự kiện trọng đại
-            </div>
-            <h3 class="text-xl sm:text-2xl font-serif font-black text-white">
-              ĐÊM GALA VINH DANH &amp; TRAO GIẢI TOÀN QUỐC
-            </h3>
-            <p class="text-stone-300 text-xs sm:text-sm mt-1">
-              Ngày <strong>22/12/2026</strong> – Kỷ niệm Ngày thành lập Quân đội Nhân dân Việt Nam. Truyền hình trực tiếp trên kênh SCTV.
-            </p>
-            
-            <!-- Real Countdown Blocks -->
-            <div class="grid grid-cols-4 gap-2 sm:gap-4 mt-5 max-w-md mx-auto lg:mx-0">
-              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
-                <span id="daysCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">256</span>
-                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Ngày</span>
-              </div>
-              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
-                <span id="hoursCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">14</span>
-                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Giờ</span>
-              </div>
-              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
-                <span id="minsCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">38</span>
-                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Phút</span>
-              </div>
-              <div class="bg-[#120101] border border-amber-400/50 rounded-xl p-2.5 sm:p-3 text-center">
-                <span id="secsCount" class="block text-2xl sm:text-3xl font-serif font-black text-amber-300">19</span>
-                <span class="text-[10px] sm:text-xs uppercase font-semibold text-stone-400">Giây</span>
-              </div>
-            </div>
+          <!-- Box 1: Ngày -->
+          <div class="countdown-card-plum rounded-2xl p-4 sm:p-5 md:p-6 text-center relative overflow-hidden group">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"></div>
+            <span id="daysCount" class="block text-3xl sm:text-5xl md:text-6xl font-serif font-black text-amber-300 tracking-tight drop-shadow">256</span>
+            <span class="block text-[11px] sm:text-xs md:text-sm uppercase font-bold text-amber-200/90 tracking-widest mt-1.5 sm:mt-2">Ngày</span>
           </div>
 
-          <!-- Right: Audio Melody Preview Component (Atmosphere Builder) -->
-          <div class="lg:col-span-5 bg-[#140101]/90 rounded-2xl border border-amber-400/40 p-4 sm:p-5">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-2">
-                <i class="fa-solid fa-music text-amber-400"></i>
-                <span class="text-xs uppercase font-bold text-amber-200">Giai điệu truyền thống cách mạng</span>
-              </div>
-              <span class="text-[10px] bg-red-950 text-amber-300 px-2 py-0.5 rounded border border-amber-500/30">Âm hưởng thiêng liêng</span>
-            </div>
+          <!-- Box 2: Giờ -->
+          <div class="countdown-card-plum rounded-2xl p-4 sm:p-5 md:p-6 text-center relative overflow-hidden group">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"></div>
+            <span id="hoursCount" class="block text-3xl sm:text-5xl md:text-6xl font-serif font-black text-amber-300 tracking-tight drop-shadow">14</span>
+            <span class="block text-[11px] sm:text-xs md:text-sm uppercase font-bold text-amber-200/90 tracking-widest mt-1.5 sm:mt-2">Giờ</span>
+          </div>
 
-            <!-- Mini Player Display -->
-            <div class="flex items-center gap-4 bg-stone-900/80 p-3 rounded-xl border border-stone-800">
-              <button id="audioToggleBtn" onclick="toggleAudioDemo()" class="w-12 h-12 rounded-full bg-gold-gradient text-stone-950 flex items-center justify-center flex-shrink-0 shadow-md hover:scale-105 transition-transform" aria-label="Phát nhạc thử">
-                <i id="audioIcon" class="fa-solid fa-play text-sm"></i>
-              </button>
-              <div class="flex-1 min-w-0">
-                <span id="songTitle" class="block text-sm font-bold text-amber-200 truncate">Ca khúc: "Màu Hoa Đỏ" (Nhạc sĩ Thuận Yến)</span>
-                <span class="text-[11px] text-stone-400 block">Lời thơ: Nguyễn Đức Mậu</span>
-                <!-- Equalizer visualizer effect -->
-                <div class="flex items-center gap-1 mt-1.5 h-3">
-                  <span class="w-1 bg-amber-400 rounded-full h-2 animate-pulse"></span>
-                  <span class="w-1 bg-amber-300 rounded-full h-3 animate-pulse" style="animation-delay: 0.2s"></span>
-                  <span class="w-1 bg-amber-500 rounded-full h-1 animate-pulse" style="animation-delay: 0.4s"></span>
-                  <span class="w-1 bg-amber-400 rounded-full h-3 animate-pulse" style="animation-delay: 0.1s"></span>
-                  <span class="w-1 bg-amber-300 rounded-full h-2 animate-pulse" style="animation-delay: 0.3s"></span>
-                  <span class="w-1 bg-amber-500 rounded-full h-3 animate-pulse" style="animation-delay: 0.5s"></span>
-                  <span class="text-[10px] text-stone-500 ml-2">Âm vang hào hùng Tổ quốc</span>
-                </div>
-              </div>
-            </div>
+          <!-- Box 3: Phút -->
+          <div class="countdown-card-plum rounded-2xl p-4 sm:p-5 md:p-6 text-center relative overflow-hidden group">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"></div>
+            <span id="minsCount" class="block text-3xl sm:text-5xl md:text-6xl font-serif font-black text-amber-300 tracking-tight drop-shadow">38</span>
+            <span class="block text-[11px] sm:text-xs md:text-sm uppercase font-bold text-amber-200/90 tracking-widest mt-1.5 sm:mt-2">Phút</span>
+          </div>
 
-            <!-- List of suggested revolutionary songs -->
-            <div class="mt-3 text-[11px] text-stone-400">
-              <span class="font-semibold text-amber-300">Gợi ý ca khúc dự thi:</span>
-              <span>Giai điệu Tổ quốc, Đất nước trọn niềm vui, Hát về cây lúa hôm nay, Tiếng đàn bầu, Tự nguyện...</span>
-            </div>
+          <!-- Box 4: Giây -->
+          <div class="countdown-card-plum rounded-2xl p-4 sm:p-5 md:p-6 text-center relative overflow-hidden group">
+            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent"></div>
+            <span id="secsCount" class="block text-3xl sm:text-5xl md:text-6xl font-serif font-black text-amber-300 tracking-tight drop-shadow">19</span>
+            <span class="block text-[11px] sm:text-xs md:text-sm uppercase font-bold text-amber-200/90 tracking-widest mt-1.5 sm:mt-2">Giây</span>
           </div>
 
         </div>
+
+        <!-- Quick Links / Action Row -->
+        <div class="mt-8 pt-6 border-t border-amber-400/20 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm">
+          <a href="#lo-trinh" class="text-amber-300 hover:text-white font-bold flex items-center gap-2 group/link transition-colors">
+            <i class="fa-solid fa-calendar-days text-amber-400"></i>
+            <span>Xem lộ trình 4 vòng tuyển chọn</span>
+            <i class="fa-solid fa-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+          </a>
+          <span class="hidden sm:inline text-amber-500/40">•</span>
+          <a href="#dang-ky" class="text-amber-300 hover:text-white font-bold flex items-center gap-2 group/link transition-colors">
+            <i class="fa-solid fa-microphone-lines text-amber-400"></i>
+            <span>Đăng ký tham gia tranh tài</span>
+            <i class="fa-solid fa-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -2222,11 +2280,12 @@
       }
     }
 
-    // 7. Mini Audio Demo Toggle
+    // 7. Mini Audio Demo Toggle (safeguarded)
     let isAudioPlaying = false;
     function toggleAudioDemo() {
       const icon = document.getElementById('audioIcon');
       const title = document.getElementById('songTitle');
+      if (!icon || !title) return;
       isAudioPlaying = !isAudioPlaying;
       if (isAudioPlaying) {
         icon.className = 'fa-solid fa-pause text-sm';
