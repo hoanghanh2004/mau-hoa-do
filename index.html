@@ -153,6 +153,18 @@
       font-size: 1.25rem;
     }
 
+    /* Specific corner positioning for Champion Award badge (Box 6) */
+    .badge-number-champion {
+      top: 16px !important;
+      left: 16px !important;
+    }
+    @media (min-width: 640px) {
+      .badge-number-champion {
+        top: 20px !important;
+        left: 20px !important;
+      }
+    }
+
     /* Gold Border Effects */
     .gold-frame {
       border: 2px solid transparent;
@@ -1170,31 +1182,31 @@
 
       <!-- Spotlight Grand Champion Card (From Poster Box 6) -->
       <div class="max-w-4xl mx-auto mb-12">
-        <div class="card-parchment p-8 sm:p-12 shadow-[0_0_60px_rgba(245,197,24,0.45)] border-4 border-amber-400 text-center relative overflow-hidden group">
-          <div class="badge-number"><span>6</span></div>
+        <div class="card-parchment pt-9 pb-7 px-4 sm:px-8 sm:py-10 md:p-12 shadow-[0_0_40px_rgba(245,197,24,0.35)] sm:shadow-[0_0_60px_rgba(245,197,24,0.45)] border-2 sm:border-4 border-amber-400 text-center relative group">
+          <div class="badge-number badge-number-champion !top-4 !left-4 sm:!top-5 sm:!left-5" style="top: 16px; left: 16px;"><span>6</span></div>
 
           <!-- Trophy Icon with Radiant Glow -->
-          <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-amber-500 via-amber-200 to-yellow-500 flex items-center justify-center text-red-950 text-4xl shadow-xl border-2 border-white mb-4 group-hover:scale-110 transition-transform duration-500">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-gradient-to-tr from-amber-500 via-amber-200 to-yellow-500 flex items-center justify-center text-red-950 text-3xl sm:text-4xl shadow-xl border-2 border-white mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-500">
             <i class="fa-solid fa-trophy"></i>
           </div>
 
-          <span class="text-xs sm:text-sm font-black uppercase tracking-widest text-red-900 bg-amber-200 px-5 py-1.5 rounded-full inline-block border border-amber-400 shadow-sm">
+          <span class="text-[11px] sm:text-xs md:text-sm font-black uppercase tracking-wider sm:tracking-widest text-red-900 bg-amber-200 px-4 sm:px-5 py-1.5 rounded-full inline-block border border-amber-400 shadow-sm whitespace-nowrap max-w-full">
             01 GIẢI QUÁN QUÂN XUẤT SẮC
           </span>
 
           <!-- Huge Prize Number -->
-          <div class="text-4xl sm:text-7xl font-black text-brand-redDark my-4 font-serif tracking-tight drop-shadow-sm">
-            100.000.000<span class="text-2xl sm:text-4xl underline decoration-amber-500">đ</span>
+          <div class="text-[32px] sm:text-5xl md:text-6xl lg:text-7xl font-black text-brand-redDark my-3 sm:my-4 md:my-5 font-serif tracking-tight drop-shadow-sm flex items-baseline justify-center whitespace-nowrap">
+            100.000.000<span class="text-xl sm:text-3xl md:text-4xl underline decoration-amber-500 ml-0.5 sm:ml-1">đ</span>
           </div>
 
-          <p class="text-stone-800 text-sm sm:text-base font-semibold max-w-xl mx-auto leading-relaxed">
+          <p class="text-stone-800 text-xs sm:text-sm md:text-base font-medium sm:font-semibold max-w-xl mx-auto leading-relaxed sm:leading-relaxed px-1 sm:px-0">
             Kèm <strong>Cúp Mạ Vàng Danh Giá</strong>, Bằng Chứng Nhận từ Ban Tổ Chức, và Đặc Quyền tham gia dự án <strong>sản xuất MV ca nhạc độc quyền phát sóng trên Đài Truyền Hình SCTV</strong>.
           </p>
 
-          <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-bold text-red-800">
-            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Cúp mạ vàng danh giá</span>
-            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Bằng chứng nhận chính thức</span>
-            <span class="bg-red-100 px-3 py-1 rounded-full border border-red-300">★ Phát sóng MV trên SCTV</span>
+          <div class="mt-5 sm:mt-6 md:mt-7 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-[11px] sm:text-xs font-bold text-red-800">
+            <span class="bg-red-100 px-2.5 sm:px-3 py-1 rounded-full border border-red-300 shadow-sm whitespace-nowrap">★ Cúp mạ vàng danh giá</span>
+            <span class="bg-red-100 px-2.5 sm:px-3 py-1 rounded-full border border-red-300 shadow-sm whitespace-nowrap">★ Bằng chứng nhận chính thức</span>
+            <span class="bg-red-100 px-2.5 sm:px-3 py-1 rounded-full border border-red-300 shadow-sm whitespace-nowrap">★ Phát sóng MV trên SCTV</span>
           </div>
         </div>
       </div>
