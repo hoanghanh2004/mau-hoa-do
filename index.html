@@ -1741,9 +1741,9 @@
               </div>
               <div>
                 <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
-                  Email liên hệ <span class="text-red-400">*</span>
+                  Email liên hệ
                 </label>
-                <input type="email" id="email" name="entry.434468230" required placeholder="thi-sinh@example.com" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+                <input type="email" id="email" name="entry.434468230" placeholder="thi-sinh@example.com" class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
               </div>
             </div>
 
@@ -1772,17 +1772,17 @@
             <!-- Row 4: Song Name -->
             <div>
               <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
-                Tên bài hát đăng ký dự thi (Dòng nhạc cách mạng) <span class="text-red-400">*</span>
+                Tên bài hát đăng ký dự thi (Dòng nhạc cách mạng)
               </label>
-              <input type="text" id="songName" name="entry.1993009747" required placeholder="Ví dụ: Màu Hoa Đỏ, Giai điệu Tổ quốc, Đất nước trọn niềm vui..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              <input type="text" id="songName" name="entry.1993009747" placeholder="Ví dụ: Màu Hoa Đỏ, Giai điệu Tổ quốc, Đất nước trọn niềm vui..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
             </div>
 
             <!-- Row 5: Demo Audio / Video Link -->
             <div>
               <label class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
-                Link Audio / Video bài hát mẫu (Google Drive / Youtube / Facebook) <span class="text-red-400">*</span>
+                Link Audio / Video bài hát mẫu (Google Drive / Youtube / Facebook)
               </label>
-              <input type="url" id="demoLink" name="entry.115166694" required placeholder="https://drive.google.com/... hoặc https://youtube.com/..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              <input type="url" id="demoLink" name="entry.115166694" placeholder="https://drive.google.com/... hoặc https://youtube.com/..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
               <p class="text-[11px] text-stone-400 mt-1">
                 * Nếu dùng Google Drive, vui lòng mở quyền truy cập "Bất kỳ ai có đường liên kết". Nếu chưa có link, bạn có thể gửi file qua Zalo/Email BTC sau.
               </p>
@@ -1791,9 +1791,9 @@
             <!-- Row 6: Personal Photos Google Drive Link -->
             <div>
               <label for="personalPhotosLink" class="block text-xs uppercase tracking-wider font-bold text-amber-200 mb-1.5">
-                LINK GOOGLE DRIVE CHỨA 3 ẢNH CÁ NHÂN <span class="text-red-400">*</span>
+                LINK GOOGLE DRIVE CHỨA 3 ẢNH CÁ NHÂN
               </label>
-              <input type="url" id="personalPhotosLink" name="entry.1020736335" required placeholder="https://drive.google.com/..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
+              <input type="url" id="personalPhotosLink" name="entry.1020736335" placeholder="https://drive.google.com/..." class="w-full bg-[#180202] border border-amber-400/40 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder-stone-500 transition-colors" />
               <p class="text-[11px] text-stone-400 mt-1">
                 * Vui lòng tải 3 ảnh cá nhân lên Google Drive, bật quyền "Bất kỳ ai có đường link đều có thể xem" và dán link vào đây.
               </p>
@@ -2252,7 +2252,7 @@
       document.getElementById('summaryName').innerText = fullName;
       document.getElementById('summaryTable').innerText = tableText;
       document.getElementById('summaryRegion').innerText = regionText;
-      document.getElementById('summarySong').innerText = songName;
+      document.getElementById('summarySong').innerText = songName || 'Chưa cung cấp (bổ sung sau)';
 
       submitButton.disabled = true;
       submitButton.setAttribute('aria-busy', 'true');
