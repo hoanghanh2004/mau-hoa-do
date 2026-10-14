@@ -182,6 +182,30 @@
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(245, 197, 24, 0.25);
     }
 
+    /* Mobile Sticky Bottom Bar */
+    .mobile-sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      background: linear-gradient(180deg, rgba(38, 3, 3, 0.98) 0%, rgba(18, 1, 1, 0.98) 100%);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 2px solid rgba(245, 197, 24, 0.7);
+      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.75), 0 -2px 10px rgba(245, 197, 24, 0.2);
+      padding-top: 8px;
+      padding-bottom: max(10px, env(safe-area-inset-bottom));
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    @media (min-width: 769px) {
+      .mobile-sticky-bottom-bar {
+        display: none !important;
+      }
+    }
+
     /* Gold Border Effects */
     .gold-frame {
       border: 2px solid transparent;
@@ -377,10 +401,7 @@
         <i class="fa-solid fa-handshake text-amber-400 text-sm w-5 text-center"></i>
         <span>Đơn Vị Tổ Chức &amp; Đồng Hành</span>
       </a>
-      <a href="#faq" onclick="closeMobileMenu()" class="flex items-center gap-3 p-3 rounded-xl bg-red-950/40 hover:bg-amber-400/20 text-stone-200 hover:text-amber-300 text-sm font-bold border border-amber-400/20 transition-all">
-        <i class="fa-solid fa-circle-question text-amber-400 text-sm w-5 text-center"></i>
-        <span>Câu Hỏi Thường Gặp (FAQ)</span>
-      </a>
+
 
       <!-- Big Mobile CTA Button -->
       <div class="pt-3">
@@ -1807,84 +1828,6 @@
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 11. SECTION: FAQ - HỎI ĐÁP THẮC MẮC THƯỜNG GẶP                             -->
-  <!-- ========================================================================= -->
-  <section class="py-20 bg-radial-luxury relative border-b border-amber-500/30" id="faq">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Header -->
-      <div class="text-center mb-14">
-        <span class="text-amber-400 font-extrabold uppercase tracking-widest text-xs">Giải Đáp Thắc Mắc</span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-black text-white mt-2">
-          Câu Hỏi Thường Gặp
-        </h2>
-        <div class="w-24 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
-      </div>
-
-      <!-- FAQ Accordion List -->
-      <div class="space-y-4">
-        
-        <!-- FAQ 1 -->
-        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
-          <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
-            <span class="text-base sm:text-lg flex items-center gap-3">
-              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
-              Cuộc thi có thu bất kỳ lệ phí nộp hồ sơ hay thi cử nào không?
-            </span>
-            <i id="faqIcon-1" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div id="faqContent-1" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
-            <strong>Hoàn toàn KHÔNG!</strong> Ban Tổ Chức cam kết chính thức: Thí sinh <strong>100% miễn phí</strong> đăng ký và không phải đóng bất kỳ khoản chi phí nào khi tham gia cuộc thi.
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
-          <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
-            <span class="text-base sm:text-lg flex items-center gap-3">
-              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
-              Người chưa từng học thanh nhạc bài bản có tham gia được không?
-            </span>
-            <i id="faqIcon-2" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div id="faqContent-2" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
-            Rất hoan nghênh! Cuộc thi có riêng <strong>Bảng Phong Trào</strong> dành cho mọi tầng lớp nhân dân, cán bộ, công nhân viên chức và học sinh sinh viên không qua đào tạo chuyên sâu. Tiêu chí chấm điểm của bảng này chú trọng vào cảm xúc, sự chân thực và niềm đam mê ca khúc quê hương cách mạng.
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
-          <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
-            <span class="text-base sm:text-lg flex items-center gap-3">
-              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
-              Thí sinh ở tỉnh xa hoặc ở nước ngoài đăng ký thế nào?
-            </span>
-            <i id="faqIcon-3" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div id="faqContent-3" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
-            Bạn có thể điền form đăng ký online tại trang web này và đính kèm video/audio dự thi. Vòng Casting sẽ diễn ra tại 02 địa điểm tập trung là <strong>Hà Nội (Miền Bắc)</strong> và <strong>TP. Hồ Chí Minh (Miền Nam)</strong>, thí sinh có thể chủ động lựa chọn khu vực thuận tiện nhất để tham gia.
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="glass-card rounded-2xl border-amber-400/40 overflow-hidden">
-          <button onclick="toggleFaq(4)" class="w-full p-5 text-left flex items-center justify-between text-stone-100 font-bold hover:text-amber-300 transition-colors focus:outline-none">
-            <span class="text-base sm:text-lg flex items-center gap-3">
-              <i class="fa-solid fa-circle-question text-amber-400 text-sm"></i>
-              Ca khúc dự thi bao gồm những thể loại bài hát nào?
-            </span>
-            <i id="faqIcon-4" class="fa-solid fa-chevron-down text-amber-400 transition-transform duration-300"></i>
-          </button>
-          <div id="faqContent-4" class="hidden px-5 pb-5 text-sm text-stone-300 leading-relaxed border-t border-amber-500/20 pt-3">
-            Tất cả các ca khúc thuộc <strong>dòng nhạc truyền thống cách mạng, ca ngợi quê hương đất nước, Đảng, Bác Hồ, người lính và lịch sử hào hùng của dân tộc Việt Nam</strong> được Bộ Văn hóa Thể thao và Du lịch cho phép lưu hành.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
 
   <!-- ========================================================================= -->
   <!-- 12. SECTION: LIÊN HỆ TIẾP NHẬN HỒ SƠ CHÍNH THỨC                            -->
@@ -1958,7 +1901,7 @@
   <!-- ========================================================================= -->
   <!-- 13. SITE FOOTER                                                           -->
   <!-- ========================================================================= -->
-  <footer class="bg-[#0b0101] text-stone-400 py-14 text-sm border-t border-stone-800">
+  <footer class="bg-[#0b0101] text-stone-400 pt-14 pb-28 md:pb-14 text-sm border-t border-stone-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
@@ -2050,24 +1993,53 @@
   </footer>
 
   <!-- ========================================================================= -->
-  <!-- FLOATING QUICK ACTION BAR (HOTLINE & ZALO & BACK TO TOP)                  -->
+  <!-- MOBILE STICKY BOTTOM BAR (STRICTLY HIDDEN ON DESKTOP >= 768PX)            -->
   <!-- ========================================================================= -->
-  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end space-y-3">
+  <div class="mobile-sticky-bottom-bar md:hidden flex items-center justify-between gap-2.5">
     
-    <!-- Zalo Floating Button -->
-    <a href="https://zalo.me/0938808886" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all transform hover:-translate-x-1" title="Tư vấn Zalo Nhà báo Duy Mạnh">
+    <!-- Left Area: Compact Zalo & Phone Call Buttons -->
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <!-- Zalo Button -->
+      <a href="https://zalo.me/0938808886" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex flex-col items-center justify-center shadow-md active:scale-90 transition-transform" aria-label="Tư vấn Zalo Nhà báo Duy Mạnh">
+        <i class="fa-solid fa-comment-dots text-base"></i>
+        <span class="text-[9px] font-bold leading-none mt-0.5">Zalo</span>
+      </a>
+
+      <!-- Phone Call Button -->
+      <a href="tel:0938808886" class="w-11 h-11 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white flex flex-col items-center justify-center shadow-md active:scale-90 transition-transform relative" aria-label="Gọi Hotline Tuyển sinh">
+        <i class="fa-solid fa-phone-volume text-base animate-pulse"></i>
+        <span class="text-[9px] font-bold leading-none mt-0.5">Gọi</span>
+      </a>
+    </div>
+
+    <!-- Right Area: Prominent Gold CTA Button -->
+    <a href="#dang-ky" onclick="document.getElementById('dang-ky')?.scrollIntoView({behavior: 'smooth'})" class="flex-1 h-11 rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500 hover:brightness-105 active:scale-95 text-[#240303] font-black tracking-wider uppercase text-xs sm:text-sm flex items-center justify-center gap-2 shadow-[0_2px_15px_rgba(245,197,24,0.5)] border-2 border-white/60 transition-transform" aria-label="Đăng ký ngay">
+      <i class="fa-solid fa-file-signature text-sm"></i>
+      <span>ĐĂNG KÝ NGAY</span>
+      <i class="fa-solid fa-chevron-right text-[10px]"></i>
+    </a>
+
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING QUICK ACTION BAR (DESKTOP: HOTLINE & ZALO & BACK TO TOP)         -->
+  <!-- ========================================================================= -->
+  <div class="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-40 flex flex-col items-end space-y-2.5 sm:space-y-3">
+    
+    <!-- Zalo Floating Button (Desktop only) -->
+    <a href="https://zalo.me/0938808886" target="_blank" rel="noopener noreferrer" class="hidden md:flex group items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition-all transform hover:-translate-x-1" title="Tư vấn Zalo Nhà báo Duy Mạnh">
       <i class="fa-solid fa-comment-dots text-lg"></i>
       <span class="text-xs font-bold hidden sm:inline">Zalo: 0938 808 886</span>
     </a>
 
-    <!-- Phone Call Floating Button with Pulsing Wave -->
-    <a href="tel:0938808886" class="relative group flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white px-4 py-3 rounded-full shadow-red-glow transition-all transform hover:scale-105" title="Gọi Hotline Tuyển sinh">
+    <!-- Phone Call Floating Button with Pulsing Wave (Desktop only) -->
+    <a href="tel:0938808886" class="hidden md:flex relative group items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white px-4 py-3 rounded-full shadow-red-glow transition-all transform hover:scale-105" title="Gọi Hotline Tuyển sinh">
       <span class="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-40"></span>
       <i class="fa-solid fa-phone-volume text-lg relative z-10"></i>
       <span class="text-xs font-black uppercase tracking-wider relative z-10 hidden sm:inline">0938 808 886</span>
     </a>
 
-    <!-- Back to top button -->
+    <!-- Back to top button (Floats safely above bottom bar on mobile, standard on desktop) -->
     <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-stone-900/90 border border-amber-400/50 text-amber-300 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-amber-400 hover:text-stone-950 shadow-lg" aria-label="Lên đầu trang">
       <i class="fa-solid fa-arrow-up text-xs"></i>
     </button>
@@ -2237,22 +2209,7 @@
       });
     }
 
-    // 5. FAQ Accordion Toggle
-    function toggleFaq(index) {
-      const content = document.getElementById(`faqContent-${index}`);
-      const icon = document.getElementById(`faqIcon-${index}`);
-      if (content) {
-        const isOpen = !content.classList.contains('hidden');
-        // Close all
-        document.querySelectorAll('[id^="faqContent-"]').forEach(el => el.classList.add('hidden'));
-        document.querySelectorAll('[id^="faqIcon-"]').forEach(el => el.style.transform = 'rotate(0deg)');
 
-        if (!isOpen) {
-          content.classList.remove('hidden');
-          if (icon) icon.style.transform = 'rotate(180deg)';
-        }
-      }
-    }
 
     // 6. Select Division Quick Anchor helper
     function selectTable(val) {
